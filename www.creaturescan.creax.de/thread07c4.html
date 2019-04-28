@@ -1,0 +1,604 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/thread.php?postid=711 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+<head>
+<title>creatureScan - Fehlermeldung bei versuch mit php server zu syncen.</title>
+ 
+<STYLE TYPE="TEXT/CSS">
+ <!--
+  BODY { SCROLLBAR-BASE-COLOR: #0B6295; SCROLLBAR-ARROW-COLOR: #FFFFFF; }
+SELECT {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+TEXTAREA {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+.input {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+ 
+ border-top-width : 1px;
+ border-right-width : 1px;
+ border-bottom-width : 1px;
+ border-left-width : 1px;
+ text-indent : 2px;
+}
+.topnavi {
+	padding-right: 5px;
+	padding-bottom: 18px;
+	padding-left: 5px;
+}
+
+#bg A:link, #bg A:visited, #bg A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#bg A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablea A:link, #tablea A:visited, #tablea A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tablea A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tableb A:link, #tableb A:visited, #tableb A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tableb A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablecat A:link, #tablecat A:visited, #tablecat A:active { COLOR: #ffffff; TEXT-DECORATION: underline; }
+#tablecat A:hover { COLOR: #ffffff; TEXT-DECORATION: none; }
+
+#tabletitle A:link, #tabletitle A:visited, #tabletitle A:active { COLOR: #000000; TEXT-DECORATION: none; }
+#tabletitle A:hover { COLOR: #000000; TEXT-DECORATION: underline; }
+
+#tabletitle { background-image: url(images/cellpic.gif); }
+.clsCursor {  cursor: hand}
+ -->
+</STYLE>
+<link rel="shortcut icon" href="cSlogo.ico">
+
+
+</head>
+
+<body bgcolor="#004671" text="#000000" id="bg">
+<table width="100%" cellpadding=0 cellspacing=1 align="center" border=0 bgcolor="#ffffff">
+ <tr>
+  <td bgcolor="#0B6295" align="center">
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td background="images/back.gif" align="center"><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/logo.gif" border=0></a></td>
+     <td align="left" class="topnavi" valign="bottom" nowrap>
+        <font face="Tahoma,Helvetica" size="1">
+	    <a href="http://www.download.creax.de/?class=creatureScan"><img src="images/top_download.gif" border=0 alt="Download"></a>
+	    <a href="wiki/index.html"><img src="images/top_wiki.png" border=0 alt="Wiki"></a><a>v2</a>
+    	    <br>
+		<a href="registerf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_register.gif" border=0 alt="Registrierung"></a>
+ 
+    	    <a href="memberslistf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_members.gif" border=0 alt="Mitgliederliste"></a> 
+    	    <a href="teamf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_team.gif" border=0 alt="Administratoren und Moderatoren"></a> 
+    	    <a href="searchf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_search.gif" border=0 alt="Suche"></a> 
+    	    <a href="misc5fbc.html?action=faq&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_faq.gif" border=0 alt="H&auml;ufig gestellte Fragen"></a> 
+    	     
+    	    <a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_start.gif" border=0 alt="Zur Startseite"></a>
+           <!-- -->
+    	    
+        </font>
+     </td>
+     <td background="images/back.gif" align="center" width="100%">
+<!--
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+             <input type="hidden" name="cmd" value="_s-xclick">
+             <input type="hidden" name="hosted_button_id" value="TQ8LKTQBUP3E8">
+             <input type="image" src="http://www.creaturescan.creax.de/images/spenden.png" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online spenden . mit PayPal.">
+             <img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+           </form>
+-->
+     </td>
+    </tr>
+   </table><br>
+   <table cellpadding=4 cellspacing=1 border=0 width="98%" bgcolor="#000000">
+
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td><table cellpadding=0 cellspacing=0 border=0 width="100%">
+   <tr>
+    <td><font face="Tahoma,Helvetica" size="1"><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a> » <a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a>
+ » <a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a>
+ » </b><b>Fehlermeldung bei versuch mit php server zu syncen.</b> </font></td>
+    <td align="right"><font face="Tahoma,Helvetica" size="1"><b>» Hallo Gast [<a href="loginf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">anmelden</a>|<a href="registerf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">registrieren</a>]
+</b></font></td>
+   </tr>
+  </table></td>
+ </tr>
+ <tr bgcolor="#0B6295" id="tabletitle">
+  <td><table cellpadding=0 cellspacing=0 border=0 width="100%">
+   <tr>
+    <td></td>
+    <td align="right" valign="top"><font face="Tahoma,Helvetica" size="1" color="#ffffff"><a href="printcc04.html?threadid=162&amp;page=1&amp;sid=ba443847d600f0c46f829be956d9afeb">Druckvorschau</a> | <a href="formmailb1e5.html?threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb">An Freund senden</a> | <a href="usercpf5c4.html?action=addsubscription&amp;threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb">Thema zu Favoriten hinzuf&uuml;gen</a></font></td>
+   </tr>
+  </table></td>
+ </tr>
+</table>
+<table width="98%">
+ <tr>
+  <td valign="bottom"><font face="Tahoma,Helvetica" size="1"></font></td>
+  <td align="right" valign="bottom"><font face="Tahoma,Helvetica" size="1"><a href="newthread3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/newthread.gif" border=0 alt="Neues Thema erstellen"></a>
+ <a href="addreplyb1e5.html?threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/reply.gif" border=0 alt="Antwort erstellen"></a>
+</font></td>
+ </tr>
+</table>
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#000000" width="98%" align="center">
+ <tr>
+  <td><table cellpadding=4 cellspacing=1 border=0 width="100%">
+   <tr bgcolor="#0B6295" id="tabletitle">
+    <td width="175" nowrap><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>Autor</b></font></td>
+    <td width="100%"><table cellpadding=0 cellspacing=0 border=0 width="100%">
+     <tr>
+      <td><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>Beitrag</b></font></td>
+      <td align="right"><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>«</b> <a href="thread6b25.html?goto=nextoldest&amp;threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb">Vorheriges Thema</a> | <a href="thread140e.html?goto=nextnewest&amp;threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb">N&auml;chstes Thema</a> <b>»</b></font></td>
+     </tr>
+    </table></td>
+   </tr>
+  </table>
+  <table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post711"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilefe81.html?userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb">Mumie</a>
+</b></font> <img src="images/male.gif" border=0 alt="Mumie ist m&auml;nnlich">
+<br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 05.01.2011<br>
+
+	Beitr&auml;ge: 3<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td><img src="images/icons/icon9.gif" alt="traurig" border=0> <font face="Tahoma,Helvetica" size="1"><b>Fehlermeldung bei versuch mit php server zu syncen.</b></font></td>
+        <td align="right"><a href="addreply9e62.html?postid=711&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost7e8e.html?postid=711&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report7e8e.html?postid=711&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscd69b.html?action=viewip&amp;postid=711&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">Hallo <img src="images/smilies/smile.gif" alt="smile" border=0>,<br />
+<br />
+Ich habe vor kurzem einen php server mit der cs_engine eingerichtet. Soweit funktioniert alles...nur wenn ich dann auf SYNC in creaturescan drücke kommt eine Fehlermeldung:<br />
+"Zugriffsverletzing bei Adresse 0053BB7F in Modul ´creatureScan.exe´. Lesen von Adresse 00000000.<br />
+<br />
+Im Log steht dann:<br />
+<br />
+Start Sync....<br />
+sync solar systems...<br />
+got times, parse...<br />
+do sync...<br />
+<br />
+scheint eher am Programm selber zu liegen oder hab ich was am php server falsch eingestellt???!!!</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread07c4.html?postid=711#post711"><img src="images/posticon.gif" border=0></a>
+ 05.01.2011 <font color="#000000">01:55</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="Mumie ist offline">
+   <a href="search782f.html?action=user&amp;userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von Mumie suchen"></a>
+ <a href="usercpff4c.html?action=buddy&amp;add=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie Mumie in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post712"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply2590.html?postid=712&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost1cb8.html?postid=712&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report1cb8.html?postid=712&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc771d.html?action=viewip&amp;postid=712&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">Hallo, <br />
+<br />
+also, da gibts wohl wirklich einen Fehler im Programm, weil so eine Fehlermeldung sollte auch bei einer falschen server-konfiguration nicht kommen!<br />
+<br />
+Leider kann ich dir nicht genau sagen woran das liegt.<br />
+Kannst du mir, am besten per email, die config.php und einen screenshot von den verbindungs-einstellungen schicken? Dann kann ich dir evtl. helfen.<br />
+<br />
+Und kannst du mir ein paar infos zu den Daten schreiben: <br />
+Wieviele Scans/Solsys in der DB auf dem Server? <br />
+Wieviele Scans/Solsys in der DB auf dem Client (creatureScan)<br />
+<br />
+Gruß creature</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threadad37-2.html?postid=712#post712"><img src="images/posticon.gif" border=0></a>
+ 05.01.2011 <font color="#000000">05:24</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post713"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilefe81.html?userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb">Mumie</a>
+</b></font> <img src="images/male.gif" border=0 alt="Mumie ist m&auml;nnlich">
+<br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 05.01.2011<br>
+
+	Beitr&auml;ge: 3<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreplydf7b.html?postid=713&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostd318.html?postid=713&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportd318.html?postid=713&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscb35e.html?action=viewip&amp;postid=713&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">alles klar hab ich gemacht <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0> ... in der config.php hab ich mal das password rausgemacht <img src="images/smilies/smile.gif" alt="smile" border=0>. hoffe das ist nicht von nöten.</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread0820.html?postid=713#post713"><img src="images/posticon.gif" border=0></a>
+ 06.01.2011 <font color="#000000">16:59</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="Mumie ist offline">
+   <a href="search782f.html?action=user&amp;userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von Mumie suchen"></a>
+ <a href="usercpff4c.html?action=buddy&amp;add=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie Mumie in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post716"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply75db.html?postid=716&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editposta8fb.html?postid=716&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reporta8fb.html?postid=716&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc2d5f.html?action=viewip&amp;postid=716&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">Hi Mumie, <br />
+<br />
+hast du meine Mails bekommen?<br />
+<br />
+Gehts mit der neuen Version besser?<br />
+<br />
+Gruß creature</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread4336.html?postid=716#post716"><img src="images/posticon.gif" border=0></a>
+ 12.01.2011 <font color="#000000">23:51</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post717"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilefe81.html?userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb">Mumie</a>
+</b></font> <img src="images/male.gif" border=0 alt="Mumie ist m&auml;nnlich">
+<br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 05.01.2011<br>
+
+	Beitr&auml;ge: 3<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td><img src="images/icons/icon16.gif" alt="Daumen hoch!" border=0> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply8718.html?postid=717&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost9ac6.html?postid=717&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report9ac6.html?postid=717&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc2214.html?action=viewip&amp;postid=717&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">ah sorry... bei dem e-mail postfach schau ich selten rein... leider kommt mit der neuen Version 1.9c der gleiche Fehler. Ich werde jetzt die cs_engine rev 13 mal probieren so wie du es empfohlen hast ... die Version 14-1 die neu hochgeladen wurde hab ich gestestet, leider ohne Erfolg.<br />
+<br />
+danke schonmal für die Mühe <img src="images/smilies/smile.gif" alt="smile" border=0><br />
+<br />
+edit: also mit der rev 13 gehts auch nicht</font></p>
+      
+      <p><font face="Tahoma,Helvetica" size="1">Dieser Beitrag wurde schon 1 mal editiert, zum letzten mal von Mumie am 16.01.2011 <font color="#000000">16:27</font>.</font></p>
+
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread0993.html?postid=717#post717"><img src="images/posticon.gif" border=0></a>
+ 15.01.2011 <font color="#000000">15:41</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="Mumie ist offline">
+   <a href="search782f.html?action=user&amp;userid=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von Mumie suchen"></a>
+ <a href="usercpff4c.html?action=buddy&amp;add=198&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie Mumie in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post730"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply81de.html?postid=730&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost26c0.html?postid=730&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report26c0.html?postid=730&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscce46.html?action=viewip&amp;postid=730&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">hi, versuchs mal mit der neuen Revision 15 <br />
+hab heute den gleichen fehler bekommen, lag daran dass ich mein php geupdatet habe und jetzt andere default-werte verwendet werden.<br />
+<br />
+Gruß</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread428e.html?postid=730#post730"><img src="images/posticon.gif" border=0></a>
+ 26.03.2011 <font color="#000000">20:06</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post734"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply193f.html?postid=734&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostb6db.html?postid=734&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportb6db.html?postid=734&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc2615.html?action=viewip&amp;postid=734&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">hmm... ich hab grad mal testweise die cS_engine auf funpic.de installiert...<br />
+<br />
+scheint so als gäbs da des problem dass das php da ne einstellung hat:<br />
+<br />
+session.use_only_cookies On On<br />
+<br />
+die man nicht ändern kann....<br />
+<br />
+<br />
+da muss ich womöglich doch was mit cookies machen<br />
+<br />
+<br />
+hmpf</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threada6aa.html?postid=734#post734"><img src="images/posticon.gif" border=0></a>
+ 27.03.2011 <font color="#000000">00:06</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+
+  <table cellpadding=4 cellspacing=1 border=0 width="100%">
+   <tr bgcolor="#0B6295" id="tabletitle">
+    <td colspan=2>
+     <table cellpadding=0 cellspacing=0 border=0 width="100%">
+      <tr>
+       <td><font face="Tahoma,Helvetica" size="1" color="#ffffff"></font></td>
+       <td align="right"><font face="Tahoma,Helvetica" size="1">&nbsp;</font></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table></td>
+ </tr>
+</table>
+<table width="98%">
+ <tr>
+  <td valign="top"><FORM ACTION="http://www.creaturescan.creax.de/threadrating.php" METHOD="POST">
+  <SELECT NAME="rating">
+   <option value="-1" selected>Thema bewerten:</option>
+   <option value="5">5 .. sehr gut</option>
+   <option value="4">4</option>
+   <option value="3">3</option>
+   <option value="2">2</option>
+   <option value="1">1 .. sehr schlecht</option>
+  </SELECT>
+  <input src="images/go.gif" type="image" border=0>
+  <input type="hidden" name="sid" value="ba443847d600f0c46f829be956d9afeb">
+  <input type="hidden" name="threadid" value="162">
+  </td></form>
+  <td align="right" valign="top"><font face="Tahoma,Helvetica" size="1"><a href="newthread3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/newthread.gif" border=0 alt="Neues Thema erstellen"></a>
+ <a href="addreplyb1e5.html?threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/reply.gif" border=0 alt="Antwort erstellen"></a>
+</font></td>
+ </tr>
+ <tr>
+  <td valign="top"><script language="JavaScript">
+<!--
+function boardjump() {
+ if(document.jumpform.boardid.options[document.jumpform.boardid.selectedIndex].value != -1) document.jumpform.submit();
+}
+//-->
+</script>
+<FORM ACTION="http://www.creaturescan.creax.de/board.php" METHOD="GET" name="jumpform">
+ <font face="Tahoma,Helvetica" size="1"><b>Gehe zu: </b></font><SELECT NAME="boardid" onChange="boardjump()">
+  <option value="-1">Bitte w&auml;hlen:</option>
+  <option value="-1">--------------------</option>
+   <option value="1">Info</option><option value="2">-- creatureScan</option><option value="3">-- News Forum/Wiki</option><option value="10">-- Downloads</option><option value="4">User</option><option value="7" selected>-- Fehlerberichte</option><option value="6">-- Ideen/Diskussionen</option><option value="12">-- Hilfe/Fragen</option>
+  </SELECT> <input src="images/go.gif" type="image" border=0>
+  <input type="hidden" name="sid" value="ba443847d600f0c46f829be956d9afeb">
+</FORM>
+</td>
+  <td align="right" valign="top"></td>
+ </tr>
+</table>
+<br><table bgcolor="#000000" cellpadding=4 cellspacing=1 border=0 align="center">
+ <tr>
+  <td bgcolor="#f5f5f5" id="tablea"><font face="Tahoma,Helvetica" size="1">Powered by <b><a href="http://www.woltlab.de/" target="_blank">Burning Board Lite 1.0.2</a></b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></td>
+ </tr>
+</table><br>
+</td>
+</tr>
+</table>
+
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/thread.php?postid=711 by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+</html>

@@ -1,0 +1,833 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/thread.php?goto=nextnewest&threadid=178&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+<head>
+<title>creatureScan - fehler beim php sync</title>
+ 
+<STYLE TYPE="TEXT/CSS">
+ <!--
+  BODY { SCROLLBAR-BASE-COLOR: #0B6295; SCROLLBAR-ARROW-COLOR: #FFFFFF; }
+SELECT {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+TEXTAREA {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+}
+
+.input {
+ FONT-SIZE: 12px;
+ FONT-FAMILY: Tahoma,Helvetica;
+ COLOR: #000000;
+ BACKGROUND-COLOR: #CFCFCF;
+ 
+ border-top-width : 1px;
+ border-right-width : 1px;
+ border-bottom-width : 1px;
+ border-left-width : 1px;
+ text-indent : 2px;
+}
+.topnavi {
+	padding-right: 5px;
+	padding-bottom: 18px;
+	padding-left: 5px;
+}
+
+#bg A:link, #bg A:visited, #bg A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#bg A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablea A:link, #tablea A:visited, #tablea A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tablea A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tableb A:link, #tableb A:visited, #tableb A:active { COLOR: #000000; TEXT-DECORATION: underline; }
+#tableb A:hover { COLOR: #000000; TEXT-DECORATION: none; }
+
+#tablecat A:link, #tablecat A:visited, #tablecat A:active { COLOR: #ffffff; TEXT-DECORATION: underline; }
+#tablecat A:hover { COLOR: #ffffff; TEXT-DECORATION: none; }
+
+#tabletitle A:link, #tabletitle A:visited, #tabletitle A:active { COLOR: #000000; TEXT-DECORATION: none; }
+#tabletitle A:hover { COLOR: #000000; TEXT-DECORATION: underline; }
+
+#tabletitle { background-image: url(images/cellpic.gif); }
+.clsCursor {  cursor: hand}
+ -->
+</STYLE>
+<link rel="shortcut icon" href="cSlogo.ico">
+
+
+</head>
+
+<body bgcolor="#004671" text="#000000" id="bg">
+<table width="100%" cellpadding=0 cellspacing=1 align="center" border=0 bgcolor="#ffffff">
+ <tr>
+  <td bgcolor="#0B6295" align="center">
+   <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+     <td background="images/back.gif" align="center"><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/logo.gif" border=0></a></td>
+     <td align="left" class="topnavi" valign="bottom" nowrap>
+        <font face="Tahoma,Helvetica" size="1">
+	    <a href="http://www.download.creax.de/?class=creatureScan"><img src="images/top_download.gif" border=0 alt="Download"></a>
+	    <a href="wiki/index.html"><img src="images/top_wiki.png" border=0 alt="Wiki"></a><a>v2</a>
+    	    <br>
+		<a href="registerf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_register.gif" border=0 alt="Registrierung"></a>
+ 
+    	    <a href="memberslistf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_members.gif" border=0 alt="Mitgliederliste"></a> 
+    	    <a href="teamf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_team.gif" border=0 alt="Administratoren und Moderatoren"></a> 
+    	    <a href="searchf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_search.gif" border=0 alt="Suche"></a> 
+    	    <a href="misc5fbc.html?action=faq&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_faq.gif" border=0 alt="H&auml;ufig gestellte Fragen"></a> 
+    	     
+    	    <a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb"><img src="images/top_start.gif" border=0 alt="Zur Startseite"></a>
+           <!-- -->
+    	    
+        </font>
+     </td>
+     <td background="images/back.gif" align="center" width="100%">
+<!--
+      <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+             <input type="hidden" name="cmd" value="_s-xclick">
+             <input type="hidden" name="hosted_button_id" value="TQ8LKTQBUP3E8">
+             <input type="image" src="http://www.creaturescan.creax.de/images/spenden.png" border="0" name="submit" alt="Jetzt einfach, schnell und sicher online spenden . mit PayPal.">
+             <img alt="" border="0" src="https://www.paypal.com/de_DE/i/scr/pixel.gif" width="1" height="1">
+           </form>
+-->
+     </td>
+    </tr>
+   </table><br>
+   <table cellpadding=4 cellspacing=1 border=0 width="98%" bgcolor="#000000">
+
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td><table cellpadding=0 cellspacing=0 border=0 width="100%">
+   <tr>
+    <td><font face="Tahoma,Helvetica" size="1"><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a> » <a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a>
+ » <a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a>
+ » </b><b>fehler beim php sync</b> </font></td>
+    <td align="right"><font face="Tahoma,Helvetica" size="1"><b>» Hallo Gast [<a href="loginf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">anmelden</a>|<a href="registerf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">registrieren</a>]
+</b></font></td>
+   </tr>
+  </table></td>
+ </tr>
+ <tr bgcolor="#0B6295" id="tabletitle">
+  <td><table cellpadding=0 cellspacing=0 border=0 width="100%">
+   <tr>
+    <td></td>
+    <td align="right" valign="top"><font face="Tahoma,Helvetica" size="1" color="#ffffff"><a href="printc7ca.html?threadid=189&amp;page=1&amp;sid=ba443847d600f0c46f829be956d9afeb">Druckvorschau</a> | <a href="formmail0e50.html?threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb">An Freund senden</a> | <a href="usercp3395.html?action=addsubscription&amp;threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb">Thema zu Favoriten hinzuf&uuml;gen</a></font></td>
+   </tr>
+  </table></td>
+ </tr>
+</table>
+<table width="98%">
+ <tr>
+  <td valign="bottom"><font face="Tahoma,Helvetica" size="1"></font></td>
+  <td align="right" valign="bottom"><font face="Tahoma,Helvetica" size="1"><a href="newthread3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/newthread.gif" border=0 alt="Neues Thema erstellen"></a>
+ <a href="addreply0e50.html?threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/reply.gif" border=0 alt="Antwort erstellen"></a>
+</font></td>
+ </tr>
+</table>
+<table cellpadding=0 cellspacing=0 border=0 bgcolor="#000000" width="98%" align="center">
+ <tr>
+  <td><table cellpadding=4 cellspacing=1 border=0 width="100%">
+   <tr bgcolor="#0B6295" id="tabletitle">
+    <td width="175" nowrap><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>Autor</b></font></td>
+    <td width="100%"><table cellpadding=0 cellspacing=0 border=0 width="100%">
+     <tr>
+      <td><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>Beitrag</b></font></td>
+      <td align="right"><font face="Tahoma,Helvetica" size="1" color="#ffffff"><b>«</b> <a href="thread022d.html?goto=nextoldest&amp;threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb">Vorheriges Thema</a> | <a href="thread6f57.html?goto=nextnewest&amp;threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb">N&auml;chstes Thema</a> <b>»</b></font></td>
+     </tr>
+    </table></td>
+   </tr>
+  </table>
+  <table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post819"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b>fehler beim php sync</b></font></td>
+        <td align="right"><a href="addreplyff0e.html?postid=819&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostac38.html?postid=819&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportac38.html?postid=819&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc39f8.html?action=viewip&amp;postid=819&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">hey ich bekomme immer mal wieder diesen fehler beim syncen<br />
+<br />
+05.10.2011 15:15:32: error: xml:<br />
+05.10.2011 15:15:32: XML error: Invalid document end at line 1<br />
+05.10.2011 15:15:32: error: :<br />
+05.10.2011 15:15:32: failed parsing XML!<br />
+<br />
+was kann ich tun</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threadab33.html?postid=819#post819"><img src="images/posticon.gif" border=0></a>
+ 05.10.2011 <font color="#000000">15:20</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post820"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreplyb22c.html?postid=820&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost2859.html?postid=820&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report2859.html?postid=820&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc37bb.html?action=viewip&amp;postid=820&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">hi linkneo,<br />
+<br />
+das is schwer zu sagen. Es könnte ein interner Fehler sein. Kannst du mal den gesammten Log hier posten oder mir per pm schicken, falls er empfindliche Daten enthält? ;-)<br />
+<br />
+Ich kann dann versuchen das Problem einzukreisen.<br />
+<br />
+Viele Grüße</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread157a.html?postid=820#post820"><img src="images/posticon.gif" border=0></a>
+ 06.10.2011 <font color="#000000">17:39</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post822"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreplyf6a6.html?postid=822&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostef80.html?postid=822&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportef80.html?postid=822&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc8c91.html?action=viewip&amp;postid=822&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">ich hab den log bekommen...<br />
+<br />
+es schaut so aus, als obs da ein Problem mit dem POST-Request gibt. Ich glaube so ein Problem auch schon mal gehabt zu haben... ich glaube es lag an der php-konfiguration...<br />
+<br />
+Welchen Server/Hoster verwendest du?<br />
+Welche PHP-Version ist da installiert?</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threaddcc9.html?postid=822#post822"><img src="images/posticon.gif" border=0></a>
+ 08.10.2011 <font color="#000000">18:41</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post823"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply2131.html?postid=823&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostedfe.html?postid=823&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportedfe.html?postid=823&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscbd35.html?action=viewip&amp;postid=823&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">funpic.de<br />
+<br />
+ich bin mir nich ganz sicher<br />
+php 5 ich 5.2 glaub ich<br />
+<br />
+ich hab deine php config aus dem wiki<br />
+<br />
+und mit dem ele server gibt es die probleme nich</font></p>
+      
+      <p><font face="Tahoma,Helvetica" size="1">Dieser Beitrag wurde schon 1 mal editiert, zum letzten mal von linkneo am 08.10.2011 <font color="#000000">20:05</font>.</font></p>
+
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threadc1e5.html?postid=823#post823"><img src="images/posticon.gif" border=0></a>
+ 08.10.2011 <font color="#000000">19:52</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post824"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply4127.html?postid=824&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostdf9b.html?postid=824&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportdf9b.html?postid=824&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc6a5e.html?action=viewip&amp;postid=824&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">hmm... ich habe gerade die cS-engine von mir auf funpic.de die ich für das HowTo im Wiki erstellt hab auf die Version 180 geupdatet. Alles funktioniert wunderbar.<br />
+<br />
+Welche Version der cS_engine verwendest du eigentlich?<br />
+<br />
+Wenn du es genau wie ich auf funpic gemacht hast. Sollte es funktionieren.<br />
+<br />
+Das einzige was dann noch sein könnte, ist dass deine Daten irgendwie komisch anders sind und deswegen probleme machen.</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threade9b5.html?postid=824#post824"><img src="images/posticon.gif" border=0></a>
+ 10.10.2011 <font color="#000000">20:16</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post825"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply5156.html?postid=825&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost60e4.html?postid=825&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report60e4.html?postid=825&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscc33d.html?action=viewip&amp;postid=825&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">funpic<br />
+cs_engine 180<br />
+<br />
+ich hab jetzt noch mal alles neu gemacht der fehler bleibt gleich<br />
+<br />
+ich bin dem wiki nach gegangen<br />
+außer das ich in der config noch $pos_count[0] = 9; auf 11 gesetzt habe<br />
+da electra ja jetzt 11 galen hat<br />
+<br />
+is das vllt der fehler muss ich dann an einer anderen stelle auch noch ändern<br />
+<br />
+an den daten kann es auch nicht liegen den bei dem electra server von dir kommt der fehler auch nicht vor<br />
+<br />
+ich lese sie auch mit dem cs_helper 1.3b<br />
+in den creaturescan 2.0c ein<br />
+ich mache dort auch nichts von hand<br />
+das ganze mit ff6 und win7<br />
+wo sollten sich denn die daten verändern</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread0278.html?postid=825#post825"><img src="images/posticon.gif" border=0></a>
+ 11.10.2011 <font color="#000000">08:48</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post826"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply37e1.html?postid=826&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpostfb78.html?postid=826&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reportfb78.html?postid=826&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscb8e1.html?action=viewip&amp;postid=826&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von linkneo</i><br />
+außer das ich in der config noch $pos_count[0] = 9; auf 11 gesetzt habe<br />
+da electra ja jetzt 11 galen hat<br />
+<br />
+is das vllt der fehler muss ich dann an einer anderen stelle auch noch ändern</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+Nein, das sollte so schon passen...<br />
+<br />
+Mal eine andere Frage: werden die Daten trotzdem abgeglichen? Also: wenn du nach dem "fehlerhaften" Sync nochmal synchronisierst - mit den gleichen Daten -  werden dann nochmal daten gesendet? Oder ist alles aktuell?</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread9c34.html?postid=826#post826"><img src="images/posticon.gif" border=0></a>
+ 16.10.2011 <font color="#000000">23:16</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post827"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply0139.html?postid=827&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost38da.html?postid=827&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report38da.html?postid=827&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscbd8e.html?action=viewip&amp;postid=827&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">er versucht wieder zu syncen<br />
+aber nur die berreiche bei dennen der fehler war</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread0bf4.html?postid=827#post827"><img src="images/posticon.gif" border=0></a>
+ 17.10.2011 <font color="#000000">01:52</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post828"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profileeb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">creature</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Administrator<br><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif"><img src="images/star3.gif">
+<br><br>
+	Dabei seit: 24.08.2007<br>
+
+	Beitr&auml;ge: 355<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreplyf39e.html?postid=828&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost8de0.html?postid=828&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report8de0.html?postid=828&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="misc1b69.html?action=viewip&amp;postid=828&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">versucht ers beim zweitenmal nur, oder schafft er es auch?<br />
+klick öfters mal drauf, und schau ob sich was ändert!?</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threaddbb7.html?postid=828#post828"><img src="images/posticon.gif" border=0></a>
+ 17.10.2011 <font color="#000000">03:02</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_online.gif" border=0 alt="creature ist online">
+ <a href="formmaileb34.html?userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an creature senden"></a>
+  <a href="searchf325.html?action=user&amp;userid=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von creature suchen"></a>
+ <a href="usercpd9de.html?action=buddy&amp;add=1&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie creature in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" valign="top"><a name="post829"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreplyde19.html?postid=829&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editpost11d4.html?postid=829&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="report11d4.html?postid=829&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscfdef.html?action=viewip&amp;postid=829&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">er versucht es nur egal wie offt ich es mache es ändert sich nichts</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#EDEDED" id="tableb">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="threadcc73.html?postid=829#post829"><img src="images/posticon.gif" border=0></a>
+ 17.10.2011 <font color="#000000">03:22</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+<table cellpadding=4 cellspacing=1 border=0 width="100%">
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" valign="top"><a name="post837"></a>
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%"><font face="Tahoma,Helvetica" size="2"><b><a href="profilecbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb">linkneo</a>
+</b></font><br>
+      <font face="Tahoma,Helvetica" size="1">Grünschnabel<br><img src="images/star.gif">
+<br><br>
+	Dabei seit: 25.04.2011<br>
+
+	Beitr&auml;ge: 9<br>
+
+	
+	
+	 </font>
+     <br><img src="images/spacer.gif" width="159" height="1"></td>
+    </tr>
+   </table>
+  </td>
+  <td valign="top" width="100%">
+   <table width="100%" cellpadding=4 cellspacing=0 border=0>
+    <tr>
+     <td width="100%">
+      <table cellpadding=0 cellspacing=0 border=0 width="100%">
+       <tr>
+        <td> <font face="Tahoma,Helvetica" size="1"><b></b></font></td>
+        <td align="right"><a href="addreply9c49.html?postid=837&amp;action=quote&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/quote.gif" border=0 alt="Zitatantwort auf diesen Beitrag erstellen"></a> <a href="editposte3a1.html?postid=837&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/editpost.gif" border=0 alt="Diesen Beitrag editieren/l&ouml;schen"></a> <a href="reporte3a1.html?postid=837&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/report.gif" border=0 alt="Diesen Beitrag einem Moderator melden"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="miscad35.html?action=viewip&amp;postid=837&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/ip.gif" border=0 alt="IP Information"></a> <a href="javascript:self.scrollTo(0,0);"><img src="images/goup.gif" border=0 alt="Zum Anfang der Seite springen"></a></td>
+       </tr>
+      </table><hr size=1 color="#000000" noShade>
+      <p><font face="Tahoma,Helvetica" size="2">ich habs jetzt moch mal mit der neusten version versucht<br />
+<br />
+und der fehler ist identich<br />
+er kann bestimmte daten anscheinend nicht eintragen<br />
+und zwar immer die gleichen an<br />
+<br />
+ich bin halt jetzt auch leicht überfragt<br />
+ich nutze den gleichen hoster wie du<br />
+mit dem selben daten<br />
+<br />
+und bei deinem geht es und bei meinem nicht<br />
+da steig ich nicht hinter</font></p>
+      
+      
+      
+     </td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+ <tr bgcolor="#f5f5f5" id="tablea">
+  <td width="175" align="center" nowrap><font face="Tahoma,Helvetica" size="1"><a href="thread16be.html?postid=837#post837"><img src="images/posticon.gif" border=0></a>
+ 01.11.2011 <font color="#000000">19:18</font></font></td>
+  <td width="*" valign="middle"><font face="Tahoma,Helvetica" size="1"><img src="images/user_offline.gif" border=0 alt="linkneo ist offline">
+ <a href="formmailcbce.html?userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/email.gif" border=0 alt="Email an linkneo senden"></a>
+  <a href="search9187.html?action=user&amp;userid=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/search.gif" border=0 alt="Beitr&auml;ge von linkneo suchen"></a>
+ <a href="usercpf1c7.html?action=buddy&amp;add=207&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/homie.gif" border=0 alt="Nehmen Sie linkneo in Ihre Freundesliste auf"></a>
+    </font></td>
+ </tr>
+</table>
+
+  <table cellpadding=4 cellspacing=1 border=0 width="100%">
+   <tr bgcolor="#0B6295" id="tabletitle">
+    <td colspan=2>
+     <table cellpadding=0 cellspacing=0 border=0 width="100%">
+      <tr>
+       <td><font face="Tahoma,Helvetica" size="1" color="#ffffff"></font></td>
+       <td align="right"><font face="Tahoma,Helvetica" size="1">&nbsp;</font></td>
+      </tr>
+     </table>
+    </td>
+   </tr>
+  </table></td>
+ </tr>
+</table>
+<table width="98%">
+ <tr>
+  <td valign="top"><FORM ACTION="http://www.creaturescan.creax.de/threadrating.php" METHOD="POST">
+  <SELECT NAME="rating">
+   <option value="-1" selected>Thema bewerten:</option>
+   <option value="5">5 .. sehr gut</option>
+   <option value="4">4</option>
+   <option value="3">3</option>
+   <option value="2">2</option>
+   <option value="1">1 .. sehr schlecht</option>
+  </SELECT>
+  <input src="images/go.gif" type="image" border=0>
+  <input type="hidden" name="sid" value="ba443847d600f0c46f829be956d9afeb">
+  <input type="hidden" name="threadid" value="189">
+  </td></form>
+  <td align="right" valign="top"><font face="Tahoma,Helvetica" size="1"><a href="newthread3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/newthread.gif" border=0 alt="Neues Thema erstellen"></a>
+ <a href="addreply0e50.html?threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb"><img src="images/reply.gif" border=0 alt="Antwort erstellen"></a>
+</font></td>
+ </tr>
+ <tr>
+  <td valign="top"><script language="JavaScript">
+<!--
+function boardjump() {
+ if(document.jumpform.boardid.options[document.jumpform.boardid.selectedIndex].value != -1) document.jumpform.submit();
+}
+//-->
+</script>
+<FORM ACTION="http://www.creaturescan.creax.de/board.php" METHOD="GET" name="jumpform">
+ <font face="Tahoma,Helvetica" size="1"><b>Gehe zu: </b></font><SELECT NAME="boardid" onChange="boardjump()">
+  <option value="-1">Bitte w&auml;hlen:</option>
+  <option value="-1">--------------------</option>
+   <option value="1">Info</option><option value="2">-- creatureScan</option><option value="3">-- News Forum/Wiki</option><option value="10">-- Downloads</option><option value="4">User</option><option value="7" selected>-- Fehlerberichte</option><option value="6">-- Ideen/Diskussionen</option><option value="12">-- Hilfe/Fragen</option>
+  </SELECT> <input src="images/go.gif" type="image" border=0>
+  <input type="hidden" name="sid" value="ba443847d600f0c46f829be956d9afeb">
+</FORM>
+</td>
+  <td align="right" valign="top"></td>
+ </tr>
+</table>
+<br><table bgcolor="#000000" cellpadding=4 cellspacing=1 border=0 align="center">
+ <tr>
+  <td bgcolor="#f5f5f5" id="tablea"><font face="Tahoma,Helvetica" size="1">Powered by <b><a href="http://www.woltlab.de/" target="_blank">Burning Board Lite 1.0.2</a></b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></td>
+ </tr>
+</table><br>
+</td>
+</tr>
+</table>
+
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/thread.php?goto=nextnewest&threadid=178&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+</html>

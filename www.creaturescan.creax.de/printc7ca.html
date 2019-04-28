@@ -1,0 +1,156 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=189&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: fehler beim php sync - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=7Array"></a></b> (/board.php?boardid=7)<br> -->
+ -- <b><a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a></b> (http://www.creatureScan.creax.de/board.php?boardid=7)<br>
+ --- <b><a href="thread0e50.html?threadid=189&amp;sid=ba443847d600f0c46f829be956d9afeb">fehler beim php sync</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=189)</p>
+ <hr>
+<i>Geschrieben von linkneo am 05.10.2011 um <font color="#000000">15:20</font>:</i>
+<p> <b>fehler beim php sync</b></p>
+<p><font face="Tahoma,Helvetica" size="2">hey ich bekomme immer mal wieder diesen fehler beim syncen<br />
+<br />
+05.10.2011 15:15:32: error: xml:<br />
+05.10.2011 15:15:32: XML error: Invalid document end at line 1<br />
+05.10.2011 15:15:32: error: :<br />
+05.10.2011 15:15:32: failed parsing XML!<br />
+<br />
+was kann ich tun</font></p>
+
+<hr>
+<i>Geschrieben von creature am 06.10.2011 um <font color="#000000">17:39</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi linkneo,<br />
+<br />
+das is schwer zu sagen. Es könnte ein interner Fehler sein. Kannst du mal den gesammten Log hier posten oder mir per pm schicken, falls er empfindliche Daten enthält? ;-)<br />
+<br />
+Ich kann dann versuchen das Problem einzukreisen.<br />
+<br />
+Viele Grüße</font></p>
+
+<hr>
+<i>Geschrieben von creature am 08.10.2011 um <font color="#000000">18:41</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ich hab den log bekommen...<br />
+<br />
+es schaut so aus, als obs da ein Problem mit dem POST-Request gibt. Ich glaube so ein Problem auch schon mal gehabt zu haben... ich glaube es lag an der php-konfiguration...<br />
+<br />
+Welchen Server/Hoster verwendest du?<br />
+Welche PHP-Version ist da installiert?</font></p>
+
+<hr>
+<i>Geschrieben von linkneo am 08.10.2011 um <font color="#000000">19:52</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">funpic.de<br />
+<br />
+ich bin mir nich ganz sicher<br />
+php 5 ich 5.2 glaub ich<br />
+<br />
+ich hab deine php config aus dem wiki<br />
+<br />
+und mit dem ele server gibt es die probleme nich</font></p>
+
+<hr>
+<i>Geschrieben von creature am 10.10.2011 um <font color="#000000">20:16</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hmm... ich habe gerade die cS-engine von mir auf funpic.de die ich für das HowTo im Wiki erstellt hab auf die Version 180 geupdatet. Alles funktioniert wunderbar.<br />
+<br />
+Welche Version der cS_engine verwendest du eigentlich?<br />
+<br />
+Wenn du es genau wie ich auf funpic gemacht hast. Sollte es funktionieren.<br />
+<br />
+Das einzige was dann noch sein könnte, ist dass deine Daten irgendwie komisch anders sind und deswegen probleme machen.</font></p>
+
+<hr>
+<i>Geschrieben von linkneo am 11.10.2011 um <font color="#000000">08:48</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">funpic<br />
+cs_engine 180<br />
+<br />
+ich hab jetzt noch mal alles neu gemacht der fehler bleibt gleich<br />
+<br />
+ich bin dem wiki nach gegangen<br />
+außer das ich in der config noch $pos_count[0] = 9; auf 11 gesetzt habe<br />
+da electra ja jetzt 11 galen hat<br />
+<br />
+is das vllt der fehler muss ich dann an einer anderen stelle auch noch ändern<br />
+<br />
+an den daten kann es auch nicht liegen den bei dem electra server von dir kommt der fehler auch nicht vor<br />
+<br />
+ich lese sie auch mit dem cs_helper 1.3b<br />
+in den creaturescan 2.0c ein<br />
+ich mache dort auch nichts von hand<br />
+das ganze mit ff6 und win7<br />
+wo sollten sich denn die daten verändern</font></p>
+
+<hr>
+<i>Geschrieben von creature am 16.10.2011 um <font color="#000000">23:16</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von linkneo</i><br />
+außer das ich in der config noch $pos_count[0] = 9; auf 11 gesetzt habe<br />
+da electra ja jetzt 11 galen hat<br />
+<br />
+is das vllt der fehler muss ich dann an einer anderen stelle auch noch ändern</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+Nein, das sollte so schon passen...<br />
+<br />
+Mal eine andere Frage: werden die Daten trotzdem abgeglichen? Also: wenn du nach dem "fehlerhaften" Sync nochmal synchronisierst - mit den gleichen Daten -  werden dann nochmal daten gesendet? Oder ist alles aktuell?</font></p>
+
+<hr>
+<i>Geschrieben von linkneo am 17.10.2011 um <font color="#000000">01:52</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">er versucht wieder zu syncen<br />
+aber nur die berreiche bei dennen der fehler war</font></p>
+
+<hr>
+<i>Geschrieben von creature am 17.10.2011 um <font color="#000000">03:02</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">versucht ers beim zweitenmal nur, oder schafft er es auch?<br />
+klick öfters mal drauf, und schau ob sich was ändert!?</font></p>
+
+<hr>
+<i>Geschrieben von linkneo am 17.10.2011 um <font color="#000000">03:22</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">er versucht es nur egal wie offt ich es mache es ändert sich nichts</font></p>
+
+<hr>
+<i>Geschrieben von linkneo am 01.11.2011 um <font color="#000000">19:18</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ich habs jetzt moch mal mit der neusten version versucht<br />
+<br />
+und der fehler ist identich<br />
+er kann bestimmte daten anscheinend nicht eintragen<br />
+und zwar immer die gleichen an<br />
+<br />
+ich bin halt jetzt auch leicht überfragt<br />
+ich nutze den gleichen hoster wie du<br />
+mit dem selben daten<br />
+<br />
+und bei deinem geht es und bei meinem nicht<br />
+da steig ich nicht hinter</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=189&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+</html>

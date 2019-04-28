@@ -1,0 +1,228 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=13&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:35 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: Workaround für automatisches einlesen - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=6Array"></a></b> (/board.php?boardid=6)<br> -->
+ -- <b><a href="board5e64.html?boardid=6&amp;sid=ba443847d600f0c46f829be956d9afeb">Ideen/Diskussionen</a></b> (http://www.creatureScan.creax.de/board.php?boardid=6)<br>
+ --- <b><a href="thread9931.html?threadid=13&amp;sid=ba443847d600f0c46f829be956d9afeb">Workaround für automatisches einlesen</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=13)</p>
+ <hr>
+<i>Geschrieben von dAmNed am 12.12.2007 um <font color="#000000">23:49</font>:</i>
+<p> <b>Workaround für automatisches einlesen</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Es reicht ja praktisch wenn man ein kleines  (greasemokey)script schreibt, was den inhalt einer webseite automatisch in die zwischenablage kopiert. Dort wird es dann automatisch von cs entsprechend eingefügt.<br />
+Hab schon gesucht, bin aber leider noch nicht fündig geworden.<br />
+<br />
+damned</font></p>
+
+<hr>
+<i>Geschrieben von creature am 13.12.2007 um <font color="#000000">18:21</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">gute idee!<br />
+<br />
+Dann rann an die Arbeit!<br />
+<br />
+leider hab ich mich mit greasemonky noch nie beschäftigt, und hab ka wie das geht. Muss also jemand anderes gefunden werden, der das kann!</font></p>
+
+<hr>
+<i>Geschrieben von dAmNed am 17.12.2007 um <font color="#000000">21:44</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">GreaseMonkey kann anscheinend nix automatisch in die zwischenablage schieben, es müsste also wenn überhaupt ein FF addon sein. Aber da hab ich auch noch nix gefunden.</font></p>
+
+<hr>
+<i>Geschrieben von creature am 17.12.2007 um <font color="#000000">22:51</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">wahrscheinlich müssen wir garnichts nichts neues machen! also verschwende erstmal nicht so viel zeit damit was zu suchen.<br />
+<br />
+es gibt schon ein altes ff plugin.<br />
+hab von dem Betroffenen schon ne Zusage für eine neue version, allerdings is die mail mit dem plugin schon überfällig ^^. aber naja, ich will ja niemand stressen ^^</font></p>
+
+<hr>
+<i>Geschrieben von yodi am 17.12.2007 um <font color="#000000">23:51</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ein workaround fuer foxgame waere dieser...<br />
+<br />
+in der foxgame.jar befindet sich die datei foxgame.js. dort koennte man eine zusaetzliche funktion (fg_meineFunktion) einfügen, z.b. an folgender stelle:<br />
+<br />
+<table align="center" width="90%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>code:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="1">//***********************************************************************<br />
+//&nbsp;MAIN&nbsp;function<br />
+//***********************************************************************<br />
+...<br />
+&nbsp;&nbsp;&nbsp;fg_addReportButtons,<br />
+&nbsp;&nbsp;&nbsp;fg_addMilosButtons,<br />
+&nbsp;&nbsp;&nbsp;fg_addRankingButtons,<br />
+&nbsp;&nbsp;&nbsp;fg_meineFunktion,<br />
+&nbsp;&nbsp;&nbsp;fg_addDebrisImage,<br />
+&nbsp;&nbsp;&nbsp;fg_removePlanets,<br />
+...<br />
+</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<br />
+die eigentliche funktion platziert man weiter unten im source zwische beliebigen anderen funktionen.<br />
+<br />
+fg_meineFunktion koennte so aussehen:<br />
+<br />
+<table align="center" width="90%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>code:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="1">//***********************************************************************<br />
+function&nbsp;fg_meineFunktion(document)&nbsp;&#123;<br />
+<br />
+&nbsp;&nbsp;&nbsp;if&nbsp;(document&nbsp;&amp;&amp;&nbsp;!fg_isGalaxyUrl(document.location.href))&nbsp;return;<br />
+&nbsp;&nbsp;&nbsp;if&nbsp;(fg_Debug)&nbsp;alert(&quot;fg_meineFunktion&quot;);<br />
+<br />
+&nbsp;&nbsp;&nbsp;try&nbsp;&#123;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;goDoCommand('cmd_selectAll');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;goDoCommand('cmd_copy');<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;goDoCommand('cmd_selectNone');<br />
+&nbsp;&nbsp;&nbsp;&#125;&nbsp;catch&nbsp;(e)&nbsp;&#123;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;foxgamedebug(e);<br />
+&nbsp;&nbsp;&nbsp;&#125;<br />
+&#125;</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table>
+<br />
+folgendes wuerde passieren: sobald man eine gala-ansicht in unserem lieblingsspiel offen hat, wird automatisch die komplette seite markiert, in die zwischenablage kopiert und die markerung wieder entfernt. man bekommt vom kopieren in die zwischenablage also nicht ein mal etwas mit.<br />
+<br />
+hmm, tja, alles theorie... <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0><br />
+<br />
+edit:<br />
+@creature<br />
+wenn dir das "zu theoretisch" ist, einfach loeschen...</font></p>
+
+<hr>
+<i>Geschrieben von paranoid am 18.12.2007 um <font color="#000000">20:13</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Das hört sich gut an yodi, kannst du uns so  eine modifizierte Foxgame datei erstellen ?</font></p>
+
+<hr>
+<i>Geschrieben von creature am 18.12.2007 um <font color="#000000">23:14</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">@yodi: das hört sich wirklich sehr gut an,<br />
+aber was heist "alles theorie" ?<br />
+wo ist das problem?</font></p>
+
+<hr>
+<i>Geschrieben von yodi am 19.12.2007 um <font color="#000000">00:45</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von creature</i><br />
+wo ist das problem?</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+eigentlich nur die agb unseres lieblingsspiels... schicke dir gleich eine email...<br />
+<br />
+@paranoid<br />
+hast eine pn. ;o)<br />
+<br />
+gruss,<br />
+dat yodi</font></p>
+
+<hr>
+<i>Geschrieben von nemesys am 19.12.2007 um <font color="#000000">01:59</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">so lang man die galaxie selber aufruft und durchgeht verstößt das nicht gegen die agb. siehe auch galaxietoolbar</font></p>
+
+<hr>
+<i>Geschrieben von GroessterNehmer am 19.12.2007 um <font color="#000000">03:17</font>:</i>
+<p><img src="images/icons/icon4.gif" alt="Fragezeichen" border=0> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi creature!<br />
+<br />
+Hast du meine Emails nicht gekriegt? Habe dir die Extension schon zugeschickt.<br />
+<br />
+Ansonsten guckst du <a href="http://leiendorf.de/files/cshelper.xpi" target="_blank">hier</a>.<br />
+<br />
+Gruß<br />
+GroessterNehmer</font></p>
+
+<hr>
+<i>Geschrieben von Nabor am 19.12.2007 um <font color="#000000">10:39</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Ziemlich geil diese Erweiterund <img src="images/smilies/biggrin.gif" alt="großes Grinsen" border=0> habs gleich mal ausprobiert...<br />
+<br />
+Ich schau mal, ob ich es erweitert kriege um einlesen von Spio Berichten und Flottenversand... <img src="images/smilies/smile.gif" alt="smile" border=0><br />
+<br />
+Grüße<br />
+<br />
+Nabor</font></p>
+
+<hr>
+<i>Geschrieben von Nabor am 19.12.2007 um <font color="#000000">10:41</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Ach das macht er schon... (jedenfalls das mit den Spio berichten <img src="images/smilies/smile.gif" alt="smile" border=0> )<br />
+<br />
+Ziemlich cool <img src="images/smilies/biggrin.gif" alt="großes Grinsen" border=0></font></p>
+
+<hr>
+<i>Geschrieben von paranoid am 19.12.2007 um <font color="#000000">18:48</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">@ GroessterNehmer<br />
+<br />
+dickes Lob  <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0> <br />
+<br />
+Funktioniert  1a   <img src="images/smilies/biggrin.gif" alt="großes Grinsen" border=0></font></p>
+
+<hr>
+<i>Geschrieben von GroessterNehmer am 19.12.2007 um <font color="#000000">20:42</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von paranoid</i><br />
+dickes Lob  <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0> <br />
+<br />
+Funktioniert  1a   <img src="images/smilies/biggrin.gif" alt="großes Grinsen" border=0></font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+Danke, das freut mich. Aber eigentlich hat creature die ganze Arbeit gemacht. Die Extension kopiert nur den Quelltext in die Zwischenablage und creature hat die Import-Filter von cS so angepasst, dass sie auch HTML verstehen.</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=13&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:35 GMT -->
+</html>

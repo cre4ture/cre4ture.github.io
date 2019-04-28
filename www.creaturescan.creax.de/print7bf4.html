@@ -1,0 +1,137 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=119&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:34 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: creaturScan v1.8c - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=7Array"></a></b> (/board.php?boardid=7)<br> -->
+ -- <b><a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a></b> (http://www.creatureScan.creax.de/board.php?boardid=7)<br>
+ --- <b><a href="thread0bda.html?threadid=119&amp;sid=ba443847d600f0c46f829be956d9afeb">creaturScan v1.8c</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=119)</p>
+ <hr>
+<i>Geschrieben von geosulf am 01.08.2009 um <font color="#000000">09:28</font>:</i>
+<p> <b>creaturScan v1.8c</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Guten Morgen!<br />
+ich habe leider  ein Problem mit der Version creaturScan v1.8c bzw mit dem Plugin !!!!<br />
+---------------------------------------------------------------------<br />
+Fehlermeldung <br />
+TOgameDataBase.LeseMehrereScanBerichte: Plugin fehlerhaft, Anzahl <br />
+eingelesener Scans stimmt nicht mit Rückgabewert überein!<br />
+---------------------------------------------------------------------<br />
+Hier mal die wichtigen Infos zu meiner Umgebung..<br />
+Windows 7 RC 64 Bit,<br />
+firefox 3.5.1<br />
+creatureScan Helper 0.14<br />
+---------------------------------------------------------------------<br />
+der Fehler tritt auf wenn Scanns von Planeten und Monden vorhanden sind und das Popup kommt in dem man entscheiden kann ist es ein Mond oder Planeten scann, meist muß ich über MEHR (infos) schauen ist es ein Mond oder Planeten scan wenn ich dann entscheide M oder P dann den den nächsten scann auch wieder überprüfe kommt die Fehlermeldung und alle weiteren scanns werden nicht mehr angeboten ..<br />
+---------------------------------------------------------------------<br />
+<br />
+ein Tip wäre nicht schlecht<br />
+Danke <br />
+<br />
+Geosulf</font></p>
+
+<hr>
+<i>Geschrieben von AFK Rabiator am 02.08.2009 um <font color="#000000">04:59</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Jau selbe Problem haben wir alle <br />
+<br />
+<img src="http://s3.directupload.net/images/090802/pdyad4b5.jpg" border=0><br />
+<br />
+Kann man auch die Nachfrage ob Mond oder net ausstellen. Als Fleeter isses relativ boogy ob Mond oder Plani man kennt sein Uni, seine Galas und Opfa eh auswendig.<br />
+<br />
+Alles andere is Top an CS will ja nicht nur meckern ;P</font></p>
+
+<hr>
+<i>Geschrieben von creature am 02.08.2009 um <font color="#000000">17:30</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Guten Abend<br />
+<br />
+jop, also ich muss den bug leider bestätigen. Ein Glück habe ich diese Abfrage überhaupt eingebaut, sonst hätte ich jetzt wohl Ewigkeiten nach dem Fehler gesucht.<br />
+<br />
+Um zu verhindern das dabei Scans verloren gehen musst du deine "Mondabfragen" beantworten _bevor_ du die nächste Stange Scans einliest.<br />
+<br />
+danke fürs melden, ich werde den Bug möglichst bald beheben.<br />
+<br />
+@AFK Rabiator: ich bin zwar nicht der Meinung das es egal ist ob der Scan jetzt für den Mond oder für den Planeten eingetragen ist, aber ich baue mal so eine Option ein, sodass man die Abfragen auch abstellen kann.<br />
+<br />
+Gruß creature</font></p>
+
+<hr>
+<i>Geschrieben von AFK Rabiator am 02.08.2009 um <font color="#000000">20:38</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Jau sicher ist es nicht ganz egal ob Mond oder Plani aber da ich U70 am Tag ca 1000 Scanns raus haue und am Wochenende ein vielfaches mehr,macht es ein sehr oft leicht Aggro ;P wenn man nach 50 Scanns immmer Enter klickern muss. <br />
+<br />
+Ich würde die Option zum abstellen Top finden. Also schon mal thx für deine Bemühungen im Vorraus.<br />
+<br />
+MfG Rabbi</font></p>
+
+<hr>
+<i>Geschrieben von geosulf am 15.08.2009 um <font color="#000000">09:21</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von AFK Rabiator</i><br />
+Jau sicher ist es nicht ganz egal ob Mond oder Plani aber da ich U70 am Tag ca 1000 Scanns raus haue und am Wochenende ein vielfaches mehr,macht es ein sehr oft leicht Aggro ;P wenn man nach 50 Scanns immmer Enter klickern muss. <br />
+<br />
+Ich würde die Option zum abstellen Top finden. Also schon mal thx für deine Bemühungen im Vorraus.<br />
+<br />
+MfG Rabbi</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+<b>Hallo denke die Abfrage  ist schon OK </b><br />
+ hier mal ein Ansatz zu einer Lösung , wobei ich bin  kein Programmierer, könnte die  also nicht umsetzen,  <img src="images/smilies/confused.gif" alt="verwirrt" border=0> <br />
+<br />
+Beim einlesen der Scanns kann man doch bestimmt ein bestimmtes Feld in diesem Fall <font color="darkblue">ENERGIE</font> und den Inhalt <font color="darkblue">Die Menge der erzeugten Energie</font> auswerten  <img src="images/smilies/confused.gif" alt="verwirrt" border=0>  <img src="images/smilies/confused.gif" alt="verwirrt" border=0> <br />
+Ich denke die Energie auf Monden ist zu 99% bei 0/0 und bestimmt nicht mehr  als 100/100<br />
+wenn nun eine Kombination möglich wäre  einmal die Abfrage Planet / Mond für die Spieler die sich nur auf sich selbst verlassen und selber entscheiden möchten und die anderen Spieler die mit einem Automodus mit einer kleinen Toleranz leben können.<br />
+Es gibt bestimmt nicht viele  Spieler  die  auf Monden Solarsatelliten haben , ich war mal einer  hatte mich aber in der Spalte der zu bauenden Schiffe verklickt!<br />
+<br />
+so das wars für heute <br />
+<br />
+geosulf<br />
+ <img src="images/smilies/pleased.gif" alt="Freude" border=0>  <img src="images/smilies/pleased.gif" alt="Freude" border=0>  <img src="images/smilies/pleased.gif" alt="Freude" border=0></font></p>
+
+<hr>
+<i>Geschrieben von McDee am 18.11.2009 um <font color="#000000">10:53</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi ich hab das prob das die Sonnensystemansicht nicht automatisch weiter blättern wenn ich in ogame das Sonnensystem wechsle?? einlesen tut er, aber ich muss manuell umblättern?! früher ging das doch automatisch?!<br />
+<br />
+Gruß<br />
+McDee</font></p>
+
+<hr>
+<i>Geschrieben von creature am 19.11.2009 um <font color="#000000">01:45</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hey McDee,<br />
+<br />
+ich habe in der neusten Version die Option unter Einstellungen entfernt, da einige User dadurch leicht verwirrt waren.<br />
+<br />
+Der neue Punkte an dem dieses Feature anschaltbar ist, ist jetzt direkt im Explorerfenster selbst:<br />
+<br />
+siehe Punkt 2<br />
+<br />
+<a href="wiki/index.php5/Explorer.html" target="_blank">http://www.creaturescan.creax.de/wiki/index.php5/Explorer</a><br />
+<br />
+gruß creature</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=119&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:34 GMT -->
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=66&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:34 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: vergleichen und ersetzten - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=6Array"></a></b> (/board.php?boardid=6)<br> -->
+ -- <b><a href="board5e64.html?boardid=6&amp;sid=ba443847d600f0c46f829be956d9afeb">Ideen/Diskussionen</a></b> (http://www.creatureScan.creax.de/board.php?boardid=6)<br>
+ --- <b><a href="thread456c.html?threadid=66&amp;sid=ba443847d600f0c46f829be956d9afeb">vergleichen und ersetzten</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=66)</p>
+ <hr>
+<i>Geschrieben von Ren108 am 18.09.2008 um <font color="#000000">15:00</font>:</i>
+<p><img src="images/icons/icon4.gif" alt="Fragezeichen" border=0> <b>vergleichen und ersetzten</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Und noch eine Idee von mir nur wahrscheinlich etwas komplizierter zu realisieren. Und zwar gibt es ja immer wieder Leute die andauernd ihren Namen ändern. Daher kam mir gerade die idee dass creature scan doch die alte Galaxie Ansicht mit der aktuellen vergleichen kann und wenn ein Planet noch den selben namen hat nur der Spieler einen andren diesen Namen dann sucht und überall ersetzt.<br />
+<br />
+In wie weit das nun in der Statistik auch realisierbar ist weis ich nicht. Wär auf alle fälle mal nicht schlecht^^ Ist halt nur die frage ob diese parser funktion auch für langsamere Rechner geeignet ist.</font></p>
+
+<hr>
+<i>Geschrieben von GroessterNehmer am 20.09.2008 um <font color="#000000">01:50</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Dann müsste man aber Planeten mit Standardnamen (Heimatplanet, Kolonie) ausschließen, da es sonst zu viele Fehler geben würde.<br />
+<br />
+Beispiel: Planet Kolonie wird von Spieler A aufgegeben und der Platz wird von Spieler B auch unter dem Namen Kolonie kolonisiert. Dann würden die restlichen Planeten von Spieler A dem Spieler B fälschlicherweise zugeordnet. Wenn dann wieder ein Planet von Spieler A in der Galaxie eingelesen wird, werden alle Planeten von Spieler A und B dem Letzteren zugeordnet.<br />
+<br />
+Gruß<br />
+GN</font></p>
+
+<hr>
+<i>Geschrieben von creature am 21.09.2008 um <font color="#000000">15:31</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">tatsächlich ist das ganze nen bisschen riskannt, gerade da so ein fehler, wie GroessterNehmer beschreibt auch schwer rückgängig gemacht werden könnte, es reicht ja nicht einfach das sonnensystem neu einzulesen....<br />
+man müsste die funktion abstellen, dann alle betroffenen systeme neu einlesen und dannach die funktion wieder aktivieren -.-<br />
+<br />
+man bräuchte für sowas eine zuverlässigere quelle...<br />
+oder eine bestätigung durch den benutzer... wobei das dann aber auchwieder nervig wäre<br />
+<br />
+<br />
+vllt die möglichkeit bestimmte planeten für "automatisches Spieler-renaming" zu markieren, von denen man sicher sein kann das diese soschnell nicht den Besitzer wechseln... zb. Heimatplaneten, oder stark ausgebaute Planeten des gewünschten Spielers (der ständig den Namen wechselt <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0> )<br />
+das wäre meiner meinung nach noch die beste lösung</font></p>
+
+<hr>
+<i>Geschrieben von Ren108 am 21.09.2008 um <font color="#000000">15:34</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">stimmt daran hab ich gar net gedacht^^</font></p>
+
+<hr>
+<i>Geschrieben von pusteblume am 22.09.2008 um <font color="#000000">12:34</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">daran hatte ich schon häufiger gedacht.<br />
+<br />
+allerdings geht das viel einfacher.<br />
+<br />
+ich denke einigen sagt das galaxietool was. will hier keine fremdwerbung machen deswegen kein link. dort wird das problem folgendermaßen gelöst.<br />
+<br />
+auch hier wird beim galaxieblättern der ganze quelltext eingelesen. hier findet man neben jedem spieler ein nachrichtensymbol, für ingames. der link beinhaltet die player id. die id die jeder account solange hat wie er existiert und ist unique, da immer inkrementiert wird.<br />
+<br />
+es müsste also diese id als neues anhängsel gespeichert werden. dann kann man beim einlesen festellen ob die id gleich ist aber der spielername anders und dann den namen überall erneuern.</font></p>
+
+<hr>
+<i>Geschrieben von creature am 22.09.2008 um <font color="#000000">23:02</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">eine unique player id?<br />
+okey... dann wird das ganze natürlich wesentlich einfacher.<br />
+und in den stats geht das ganze auch, klasse!<br />
+<br />
+danke für den hinweis pusteblume!</font></p>
+
+<hr>
+<i>Geschrieben von Solaia am 06.10.2008 um <font color="#000000">23:41</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Möglich wäre auch eine "Name-History" für jeden Planeten, in der sichtbar ist, welcher Spieler von wann bis wann welchen Planeten/welche Position besessen hat.<br />
+<br />
+<br />
+Obwohl, die Spieler-ID find ich schon sexy..^^<br />
+<br />
+<br />
+Solaia</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=66&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:34 GMT -->
+</html>

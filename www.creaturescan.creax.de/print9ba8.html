@@ -1,0 +1,181 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=205&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:44 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: Fehler bei php_sync Uni_Mizar - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=7Array"></a></b> (/board.php?boardid=7)<br> -->
+ -- <b><a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a></b> (http://www.creatureScan.creax.de/board.php?boardid=7)<br>
+ --- <b><a href="thread169c.html?threadid=205&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehler bei php_sync Uni_Mizar</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=205)</p>
+ <hr>
+<i>Geschrieben von bilderberger am 29.01.2012 um <font color="#000000">17:06</font>:</i>
+<p> <b>Fehler bei php_sync Uni_Mizar</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi,<br />
+<br />
+erstmal vorab ich bin ein großer Fan von cs!<br />
+Glaub ohne würde ich ogame aufgeben.<br />
+<br />
+Mir ist jetzt im Rahmen eines Ally-Projektes, in Uni Mizar, die Vernetzung unserer cs Datenbanken zugefallen.<br />
+<br />
+Ich bin hierbei nach Anweisung vorgegangen, hat auch alles funktioniert, d.h. ich hab eine MySql-Seite, und die cs_engine dateien darin hochgeladen und habe einen Nutzer angelegt.<br />
+<br />
+Ich kann mich auch als Nutzer auf der Seite anmelden.<br />
+<br />
+Wenn ich aber versuch cs zu syncen, dann bekomm ich diese Meldung:<br />
+29.01.2012 15:52:04: start sync with server: mizar2<br />
+29.01.2012 15:52:04: try login with username: bibabutz<br />
+29.01.2012 15:52:05: (Exception) Wrong OGame/Universe! "uni113.ogame.de"<br />
+29.01.2012 15:52:05: Login Fehlgeschlagen. Evtl. stimmt der Username oder das Passwort nicht.<br />
+<br />
+Jetzt meine Frage läuft die cs_engine überhaupt für Uni Mizar, bzw. für "ogame 3.1"?<br />
+<br />
+Über eine Antwort würde ich mich freuen.<br />
+Vielen Dank vorab<br />
+Beste Grüße<br />
+Bilder</font></p>
+
+<hr>
+<i>Geschrieben von creature am 29.01.2012 um <font color="#000000">19:52</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi bilderberger,<br />
+<br />
+zunächst mal zu deinen Fragen:<br />
+<br />
+Ja und Ja! Die cS_engine geht auch mit OGame 3.1 weiterhin und die Unis sind auch egal.<br />
+<br />
+Dann zu deinem Problem:<br />
+<br />
+Bevor Daten mit der cS_engine synchronisiert werden wird überprüft ob auch das Uni (die url des Servers) stimmt. Es wäre fatal wenn versehentlich die Daten aus einem anderen Uni in die Datenbank kämen.<br />
+<br />
+Daher gibt es in der Datei config.php einen Eintrag der vermutlich so aussieht:<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2">$universe = 'uni113.ogame.de';</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+richtig?<br />
+<br />
+versuch mal da<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2">$universe = 'mizar.ogame.de';</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+einzutragen.<br />
+<br />
+Bei den Namen-Unis muss da glaub der name hin.<br />
+<br />
+Gruß,<br />
+creature</font></p>
+
+<hr>
+<i>Geschrieben von bilderberger am 29.01.2012 um <font color="#000000">20:21</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Vielen Dank für die rasche Antwort.<br />
+Die Idee hat auch super funktioniert.<br />
+<br />
+Jetzt komm ich zu dem Punkt:<br />
+<br />
+29.01.2012 19:09:50: start sync with server: mizar2<br />
+29.01.2012 19:09:50: try login with username: bibabutz<br />
+29.01.2012 19:09:50: login success!<br />
+29.01.2012 19:09:50: sync solar systems...<br />
+29.01.2012 19:09:51: got times, parse...<br />
+<br />
+An dieser Stelle wird abgebrochen, mit einer message boxs:<br />
+Server pos_count definitions are not compatible.<br />
+<br />
+Der Server ist von pytalhost.de<br />
+und die aktuellste cs_engine (cS_engine_rev180.zip)<br />
+<br />
+Kann ich darauf auch Einfluss nehmen? <br />
+<br />
+Viele Grüße<br />
+Bilderberger</font></p>
+
+<hr>
+<i>Geschrieben von creature am 29.01.2012 um <font color="#000000">21:46</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hmm...<br />
+<br />
+wieviele Galas/Sonnensysteme hat denn mizar?<br />
+<br />
+musst evtl. das noch in der config.php anpassen:<br />
+<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2">$pos_count[0] = 9;<br />
+$pos_count[1] = 499;<br />
+$pos_count[2] = 15;</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table> <br />
+<br />
+Da deutet jedenfalls die Fehlermeldung hin.<br />
+<br />
+Gruß</font></p>
+
+<hr>
+<i>Geschrieben von bilderberger am 30.01.2012 um <font color="#000000">00:26</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Jetzt ist alles bestens!<br />
+<br />
+Vielen Dank für die schnelle konstruktive Hilfe!<br />
+<br />
+Gruß<br />
+Bilderberger</font></p>
+
+<hr>
+<i>Geschrieben von csluyuan am 29.08.2013 um <font color="#000000">13:23</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Jetzt ist alles bestens!.<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+_______________________<br />
+<a href="http://www.mmowalmart.com/FIFA-13/" target="_blank">Fifa 13 Ultimate Team Coins</a></font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=205&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:44 GMT -->
+</html>

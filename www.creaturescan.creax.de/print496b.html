@@ -1,0 +1,222 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=91&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:36 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: Phalanx-Scans und Serverzeit - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=6Array"></a></b> (/board.php?boardid=6)<br> -->
+ -- <b><a href="board5e64.html?boardid=6&amp;sid=ba443847d600f0c46f829be956d9afeb">Ideen/Diskussionen</a></b> (http://www.creatureScan.creax.de/board.php?boardid=6)<br>
+ --- <b><a href="thread7fb1.html?threadid=91&amp;sid=ba443847d600f0c46f829be956d9afeb">Phalanx-Scans und Serverzeit</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=91)</p>
+ <hr>
+<i>Geschrieben von Timberwolf am 07.02.2009 um <font color="#000000">22:10</font>:</i>
+<p> <b>Phalanx-Scans und Serverzeit</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hallo,<br />
+<br />
+erstmal grosses Lob zur neuen Version. Gefällt mir sehr gut.<br />
+<br />
+Ich hätte da ne Frage, Bitte, Anregung, Idee:<br />
+<br />
+Nachdem ich einen Phalanx-Bericht eingelesen habe und so ins Fenster schaue denke ich auf einmal: "Hoppla, nun wirds Zeit für die Recs!" und schicke sie los. Leider wird die Zeit der Phalanx mit eingelesen, im Fenster bei CS allerdings die Echtzeit des PC angezeigt. Da bei mir in Uni70 z.B. diese Zeiten recht abweichend sind, waren meine Recs nun paar Sek zu früh...<br />
+<br />
+Kann man in CS irgendwie einbauen, daß die Serverzeit des Unis im Programm synchronisiert wird oder wenigstens nen fetten Warnhinweis ( Achtung! Bitte nach Serverzeit richten! ) ?</font></p>
+
+<hr>
+<i>Geschrieben von creature am 08.02.2009 um <font color="#000000">18:22</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi<br />
+<br />
+ja, so eine warnung wäre wohl nicht schlecht gewesen, ich schreibs gleich mal zu den downloadinfos dazu!<br />
+<br />
+das die zeit automatisch synchronisiert wird will ich noch einbauen, allerdings fehlen mir da grad die ideen wie ich das umsetzte...</font></p>
+
+<hr>
+<i>Geschrieben von sador am 09.02.2009 um <font color="#000000">20:27</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Kleiner Tipp zum thema serverzeit:<br />
+<br />
+Wie wäre es wenn du eine globale zeitenvariable einführst. <br />
+<br />
+Die Serverzeit bekommt man ganz einfach. <br />
+(Ich habs hier mal mit telnet gemacht)<br />
+man verbindet sich zum jeweiligen server und fordert folgende seite an:<br />
+<br />
+GET /game/index.php HTTP/1.1<br />
+Host: unixx.ogame.de<br />
+<br />
+Der Server antwortet daraufhin mit:<br />
+<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><br />
+HTTP/1.1 200 OK <br />
+Content-Length: 856 <br />
+Date: Mon, 09 Feb 2009 18:21:26 GMT <br />
+Server: Apache Set-Cookie: PHPSESSID=d3e8ec597dee0a9364dbd9fc9a602f64; path=/ Expires: Thu, 19 Nov 1981 08:52:00 GMT <br />
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0 Pragma: no-cache <br />
+Vary: Accept-Encoding <br />
+Content-Type: text/html; charset=utf-8 <br />
+Connection: keep-alive</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table> <br />
+<br />
+Die Date variable enthält die aktuelle serverzeit in GMT(also muss man noch +1h rechnen)<br />
+<br />
+So, die zeit fix in (am besten unixzeit) umrechnen, und in die dafür vorgesehene variable setzen.<br />
+<br />
+dann musst du nur noch ein event(kp wie das in pascal geht) oder einen thread starten, der diese variable jede sekunde um 1 erhöht. dann hast du programmintern die Serverzeit.</font></p>
+
+<hr>
+<i>Geschrieben von creature am 10.02.2009 um <font color="#000000">01:27</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ahaaa... der HTTP header, muss man auch erstmal wissen dass da die Zeit drin steht ^^<br />
+<br />
+thx sador, top sache, so lern ich immer wieder was dazu<br />
+<br />
+jop, das ding in unixzeit umrechnen is klar.<br />
+<br />
+aber ich glaube ich rechne einfach mit nem time-delta, dazu brauch ich mir keinen eigenen Timer bauen... der womöglich dann je nach rechnerauslastung auchnoch falsch geht ^^<br />
+<br />
+lustig wirds auchnoch die ganzen aufrufe von now(); zu ersetzen ^^<br />
+<br />
+<br />
+kurze frage noch wegs legalität!? ob die von ogame da auch nix dagegen haben?</font></p>
+
+<hr>
+<i>Geschrieben von sador am 10.02.2009 um <font color="#000000">01:37</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hmm, die sollten eig nichts dagegen haben. Also mal ganz im ernst, google zb versucht ja auch regelmässig die OGame Server durchzugrabben um ihre suchmaschine zu aktualisieren. von daher sehe ich da kein prob, mal abgesehen davon, falls du ein problem darin siehst, dann lass deinen GET request einfach die /robots.txt abfragen. Das ist das was jede suchmaschine zuerst tun würde. <br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><br />
+HTTP/1.1 200 OK<br />
+Date: Mon, 09 Feb 2009 23:31:52 GMT<br />
+Server: Apache<br />
+Last-Modified: Thu, 08 Jan 2009 15:55:45 GMT<br />
+ETag: "47e17-37-45ffaac5bc240"<br />
+Accept-Ranges: bytes<br />
+Content-Length: 55<br />
+Vary: Accept-Encoding<br />
+Content-Type: text/plain; charset=utf-8<br />
+Expires: Tue, 10 Feb 2009 23:31:52 GMT<br />
+Connection: keep-alive<br />
+<br />
+# Permit indexing of all pages<br />
+<br />
+                              User-agent: *<br />
+                                           Disallow:<br />
+</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+musst dann halt drauf achten nicht die Last-Modified Zeit zu nehmen xD<br />
+<br />
+EDIT 1:<br />
+Der simpelste weg wäre es natürlich, die Windows Systemzeit nach abfrage des OGame Servers anzupassen und beim beenden von Cs die Zeit vom voreingestellten NTP server(in den zeiteinstellungen bei windoof) abzufragen. das lässt sich afaik über die WinAPI triggern(muss dazu ma meine docs durchwühlen)<br />
+Das würde dir viele codeänderungen ersparen, sollte dann aber eine option sein, die man abschalten kann. Ich mache es derzeit als workaround so, dass ich auf die Funkzeit Sch**sse, Ogamezeit ist das einzige was zählt. Bei u70 sind das derzeit immerhin 3m47 differenz</font></p>
+
+<hr>
+<i>Geschrieben von creature am 06.04.2009 um <font color="#000000">17:39</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von sador</i><br />
+Bei u70 sind das derzeit immerhin 3m47 differenz</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+ist das immernoch so ?<br />
+<br />
+ich hab mir jetzt mal sowas zusammengabastelt.... aber mir scheint das die meisten unis, auch uni 70, ziemlich genau laufen...</font></p>
+
+<hr>
+<i>Geschrieben von sador am 06.04.2009 um <font color="#000000">21:15</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ne die haben die zeit kürzlich synchronisiert. U70 hat derzeit ne differenz von knapp 10 sec zur Funkzeit. Differenz U55 U70 liegt bei 4 sekunden. Also müssen wir noch warten bis die zeit sich wieder verstellt hat :-D</font></p>
+
+<hr>
+<i>Geschrieben von creature am 06.04.2009 um <font color="#000000">22:36</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi, also ich hab gerade mal meine funkuhr danneben gehalten und so wie ich das sehe sind das 1 bis 2 sekunden die uni70 falsch geht...<br />
+<br />
+jedenfalls stell ich mal mein tool online, ist erstmal nen extra proggy...<br />
+<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2">dieses kleine tool synchronisiert auf knopfdruck deine lokale Rechnerzeit mit dem Server des gewünschten ogame-universums.<br />
+Achtung: unter Vista muss das Programm mit Adminrechten gestartet werden, sodass es die lokale Zeit verstellen kann.</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table> <br />
+<br />
+<a href="http://www.download.creax.de/file.php?id=16" target="_blank">http://www.download.creax.de/file.php?id=16</a></font></p>
+
+<hr>
+<i>Geschrieben von 5vor12 am 03.05.2009 um <font color="#000000">16:59</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2"><table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2"><i>Original von sador</i><br />
+<br />
+EDIT 1:<br />
+Der simpelste weg wäre es natürlich, die Windows Systemzeit nach abfrage des OGame Servers anzupassen und beim beenden von Cs die Zeit vom voreingestellten NTP server(in den zeiteinstellungen bei windoof) abzufragen. das lässt sich afaik über die WinAPI triggern(muss dazu ma meine docs durchwühlen)<br />
+Das würde dir viele codeänderungen ersparen, sollte dann aber eine option sein, die man abschalten kann. Ich mache es derzeit als workaround so, dass ich auf die Funkzeit Sch**sse, Ogamezeit ist das einzige was zählt. Bei u70 sind das derzeit immerhin 3m47 differenz</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+Die lokale Zeit zu ändern ist keine Gute Idee, denn normalerweise hat der Benutzer nicht die Berechtigung die Urzeit zu ändern unter Windows. Auch ein NTP-Server muss nicht zwingend eingestellt sein - und wer möchte schon seine lokale Zeit an die Ogame-Zeit angepaßt haben die wohlgemerkt von sekundengenau bis mehrere Minuten daneben liegen kann.</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=91&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:36 GMT -->
+</html>

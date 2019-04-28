@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr" class="client-nojs">
+
+<!-- Mirrored from www.creaturescan.creax.de/wiki_2012_casdakfhjwqoefhwifn_2013/index.php5/HowTo_cS_engine by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:30:05 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+<title>HowTo cS engine – creatureScan</title>
+<meta charset="UTF-8" />
+<meta name="generator" content="MediaWiki 1.18.2" />
+<link rel="alternate" type="application/x-wiki" title="Bearbeiten" href="../index3769.html?title=HowTo_cS_engine&amp;action=edit" />
+<link rel="edit" title="Bearbeiten" href="../index3769.html?title=HowTo_cS_engine&amp;action=edit" />
+<link rel="shortcut icon" href="../../favicon.html" />
+<link rel="search" type="application/opensearchdescription+xml" href="../opensearch_desc.php5" title="creatureScan (de)" />
+<link rel="alternate" type="application/atom+xml" title="Atom-Feed für „creatureScan“" href="../index7798.php5?title=Spezial:Letzte_%C3%84nderungen&amp;feed=atom" />
+<link rel="stylesheet" href="../loadf6af.css?debug=false&amp;lang=de&amp;modules=mediawiki.legacy.commonPrint%2Cshared%7Cskins.monobook&amp;only=styles&amp;skin=monobook&amp;*" />
+<!--[if lt IE 5.5000]><link rel="stylesheet" href="/wiki_2012_casdakfhjwqoefhwifn_2013/skins/monobook/IE50Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 5.5000]><link rel="stylesheet" href="/wiki_2012_casdakfhjwqoefhwifn_2013/skins/monobook/IE55Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 6]><link rel="stylesheet" href="/wiki_2012_casdakfhjwqoefhwifn_2013/skins/monobook/IE60Fixes.css?303" media="screen" /><![endif]-->
+<!--[if IE 7]><link rel="stylesheet" href="/wiki_2012_casdakfhjwqoefhwifn_2013/skins/monobook/IE70Fixes.css?303" media="screen" /><![endif]--><meta name="ResourceLoaderDynamicStyles" content="" />
+<style>a:lang(ar),a:lang(ckb),a:lang(fa),a:lang(kk-arab),a:lang(mzn),a:lang(ps),a:lang(ur){text-decoration:none}a.new,#quickbar a.new{color:#ba0000}
+
+/* cache key: cS_wiki_2012:resourceloader:filter:minify-css:4:c88e2bcd56513749bec09a7e29cb3ffa */
+</style>
+<script src="../load4dc8.php5?debug=false&amp;lang=de&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
+<script>if(window.mw){
+	mw.config.set({"wgCanonicalNamespace": "", "wgCanonicalSpecialPageName": false, "wgNamespaceNumber": 0, "wgPageName": "HowTo_cS_engine", "wgTitle": "HowTo cS engine", "wgCurRevisionId": 296, "wgArticleId": 41, "wgIsArticle": true, "wgAction": "view", "wgUserName": null, "wgUserGroups": ["*"], "wgCategories": [], "wgBreakFrames": false, "wgRestrictionEdit": [], "wgRestrictionMove": []});
+}
+</script><script>if(window.mw){
+	mw.loader.load(["mediawiki.page.startup"]);
+}
+</script>
+</head>
+<body class="mediawiki ltr sitedir-ltr capitalize-all-nouns ns-0 ns-subject page-HowTo_cS_engine action-view skin-monobook">
+<div id="globalWrapper">
+<div id="column-content"><div id="content">
+	<a id="top"></a>
+	
+	<h1 id="firstHeading" class="firstHeading">HowTo cS engine</h1>
+	<div id="bodyContent">
+		<div id="siteSub">Aus creatureScan</div>
+		<div id="contentSub"></div>
+		<div id="jump-to-nav">Wechseln zu: <a href="#column-one">Navigation</a>, <a href="#searchInput">Suche</a></div>
+		<!-- start content -->
+<div lang="de" dir="ltr" class="mw-content-ltr"><p>Einrichten der cS_engine auf einem kostenlosen Webspace von funpic.
+Diese Anleitung nimmt als Beispiel den Freehoster "funpic". Es können aber auch andere verwendet werden die die benötigten Features unterstützen.
+</p>
+<table id="toc" class="toc"><tr><td><div id="toctitle"><h2>Inhaltsverzeichnis</h2></div>
+<ul>
+<li class="toclevel-1 tocsection-1"><a href="#Einrichten_des_Servers"><span class="tocnumber">1</span> <span class="toctext">Einrichten des Servers</span></a>
+<ul>
+<li class="toclevel-2 tocsection-2"><a href="#Anmelden_bei_Funpic"><span class="tocnumber">1.1</span> <span class="toctext">Anmelden bei Funpic</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Tabellen_der_Datenbank"><span class="tocnumber">1.2</span> <span class="toctext">Tabellen der Datenbank</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Ersten_Benutzer_eintragen"><span class="tocnumber">1.3</span> <span class="toctext">Ersten Benutzer eintragen</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#config.php_anpassen"><span class="tocnumber">1.4</span> <span class="toctext">config.php anpassen</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#PHP-Skripte_auf_den_Server_laden"><span class="tocnumber">1.5</span> <span class="toctext">PHP-Skripte auf den Server laden</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Weitere_Benutzer"><span class="tocnumber">1.6</span> <span class="toctext">Weitere Benutzer</span></a></li>
+</ul>
+</li>
+<li class="toclevel-1 tocsection-8"><a href="#creatureScan_Einrichten"><span class="tocnumber">2</span> <span class="toctext">creatureScan Einrichten</span></a></li>
+</ul>
+</td></tr></table>
+<h1><span class="editsection">[<a href="../indexfaf4.html?title=HowTo_cS_engine&amp;action=edit&amp;section=1" title="Abschnitt bearbeiten: Einrichten des Servers">Bearbeiten</a>]</span> <span class="mw-headline" id="Einrichten_des_Servers"> Einrichten des Servers </span></h1>
+<h2><span class="editsection">[<a href="../index140d.html?title=HowTo_cS_engine&amp;action=edit&amp;section=2" title="Abschnitt bearbeiten: Anmelden bei Funpic">Bearbeiten</a>]</span> <span class="mw-headline" id="Anmelden_bei_Funpic"> Anmelden bei Funpic </span></h2>
+<p>Für das Anmelden bei Funpic brauchst du nur eine E-Mail-Addresse und ist sonst kostenlos (meines Wissens, aber keine Garantie!):
+</p>
+<pre> <a rel="nofollow" class="external free" href="http://www.funpic.de/">http://www.funpic.de/</a>
+</pre>
+<p>Nach der Anmeldung musst du den Account noch aktivieren. Dies kann durch das Klicken auf den Link in der Bestätigung-Mail erledigt werden.
+</p>
+<h2><span class="editsection">[<a href="../indexa7cd.html?title=HowTo_cS_engine&amp;action=edit&amp;section=3" title="Abschnitt bearbeiten: Tabellen der Datenbank">Bearbeiten</a>]</span> <span class="mw-headline" id="Tabellen_der_Datenbank"> Tabellen der Datenbank </span></h2>
+<p>Nach dem Aktivieren musst du dich mit den angegebenen Daten aus der Mail bei Funpic anmelden. Dannach musst du im "User-Center" im Unterpunkt "Webhosting MySQL" einen neuen MySQL-Account anlegen.
+</p><p>Dannach kommst du mit dem auf dieser Seite platzierten Link "phpmyadmin" zur Administrations-Oberfläche der Datenbank wo du dich mit deinem gerate erstellten Account-Daten anmeldest.
+</p><p>Nach dem Login kannst du auf der linken Seite deine Datenbank auswählen (es ist nur eine mit deinem Namen vorhanden, einfach draufklicken!). Dann ein Klick auf dem "SQL"-Tab am obereren Rand der Seite, und du hast ein Text-Eingabefeld mit "SQL-Befehl(e) in Datenbank &lt;db-name&gt; ausführen" vor dir. Dort fügst du den Inhalt der Datei "db_structure.sql" aus dem ZIP-File der cS_engine ein. Klicke nun auf OK um die SQL-Anweisungen auszuführen.
+</p><p>Jetzt solltest du die Tabellen als Unterpunkt der Datenbank auf der linkten Seite sehen können. Falls nicht, klicke nochma auf den Datenbank-Namen.
+</p>
+<h2><span class="editsection">[<a href="../index734a.html?title=HowTo_cS_engine&amp;action=edit&amp;section=4" title="Abschnitt bearbeiten: Ersten Benutzer eintragen">Bearbeiten</a>]</span> <span class="mw-headline" id="Ersten_Benutzer_eintragen"> Ersten Benutzer eintragen </span></h2>
+<p>Wir befinden uns immernoch im phpmyadmin. Dort klickst du auf die Tabelle "users" und anschließend oben auf "Einfügen". Im Feld "username" tippst du deinen gewünschten Nutzernamen ein, mit dem du dich hinterher über creatureScan anmelden willst. Im Feld "password" stellst du bei "Funktion" MD5 ein und tippst dann dein gewünschtes Passwort als "Wert" ein. Anschließend musst du deine Eingabe noch mit "OK" bestätigen.
+</p><p><a href="Datei_Phpmyadmin_user_anlegen.html" class="image"><img alt="Phpmyadmin user anlegen.png" src="../images/f/fc/Phpmyadmin_user_anlegen.png" width="860" height="392" /></a>
+</p>
+<h2><span class="editsection">[<a href="../index5bbc.html?title=HowTo_cS_engine&amp;action=edit&amp;section=5" title="Abschnitt bearbeiten: config.php anpassen">Bearbeiten</a>]</span> <span class="mw-headline" id="config.php_anpassen"> config.php anpassen </span></h2>
+<p>Falls du es noch nicht gemacht hast, enpacke das ZIP-File der cS_engine komplett auf deine Festplatte. Dannach öffne die Datei config.php mit einem Texteditor. Dort änderst du die folgenden Zeilen:
+</p>
+<pre> $universe = 'uni&lt;uni-nummer&gt;.ogame.de';
+ ...
+ $sqlconf['mysql_username'] = '&lt;mysql-login&gt;';
+ $sqlconf['mysql_password'] = '&lt;mysql-pw&gt;';
+ $sqlconf['mysql_db'] = '&lt;mysql-login&gt;';
+</pre>
+<p>Für den mysql-login und das Passwort werden die Daten benötigt, die du auch in den phpmyadmin als Login eingegeben hast.
+Speichere jetzt die Datei ab.
+</p>
+<h2><span class="editsection">[<a href="../index5366.html?title=HowTo_cS_engine&amp;action=edit&amp;section=6" title="Abschnitt bearbeiten: PHP-Skripte auf den Server laden">Bearbeiten</a>]</span> <span class="mw-headline" id="PHP-Skripte_auf_den_Server_laden"> PHP-Skripte auf den Server laden </span></h2>
+<p>Lösche die Dateien
+</p>
+<pre> sxml_test.php
+ cSmod.php
+</pre>
+<p>aus dem entpackten Ordner. Sie werden nicht benötigt und haben evtl. Sicherheitslücken. Anschließend müssen die Verbleibenden Daten auf den Webspace per FTP kopiert werden. Dies geht Beispielsweise mit dem Tool "FileZilla". Siehe hierzu die beigefügten Screenshots.
+</p><p><a href="Datei_HowTo_FileZilla_1.html" class="image"><img alt="HowTo FileZilla 1.png" src="../images/e/e9/HowTo_FileZilla_1.png" width="757" height="195" /></a>
+<a href="Datei_HowTo_FileZilla_2.html" class="image"><img alt="HowTo FileZilla 2.png" src="../images/d/d4/HowTo_FileZilla_2.png" width="846" height="992" /></a>
+</p>
+<h2><span class="editsection">[<a href="../index920f.html?title=HowTo_cS_engine&amp;action=edit&amp;section=7" title="Abschnitt bearbeiten: Weitere Benutzer">Bearbeiten</a>]</span> <span class="mw-headline" id="Weitere_Benutzer"> Weitere Benutzer </span></h2>
+<p>Um weitere Benutzer anzulegen wiederhole den Schritt "Ersten Benutzer eintragen".
+</p>
+<h1><span class="editsection">[<a href="../index618d.html?title=HowTo_cS_engine&amp;action=edit&amp;section=8" title="Abschnitt bearbeiten: creatureScan Einrichten">Bearbeiten</a>]</span> <span class="mw-headline" id="creatureScan_Einrichten"> creatureScan Einrichten </span></h1>
+<p>creatureScan einrichten und erste Synchronisation starten.
+</p>
+<!-- 
+NewPP limit report
+Preprocessor node count: 46/1000000
+Post-expand include size: 0/2097152 bytes
+Template argument size: 0/2097152 bytes
+Expensive parser function count: 0/100
+-->
+
+<!-- Saved in parser cache with key cS_wiki_2012:pcache:idhash:41-0!*!*!!de!2!* and timestamp 20190428132732 -->
+</div><div class="printfooter">
+Von „<a href="../index4a18.html?title=HowTo_cS_engine&amp;oldid=296">http://www.creaturescan.creax.de/wiki_2012_casdakfhjwqoefhwifn_2013/index.php5?title=HowTo_cS_engine&amp;oldid=296</a>“</div>
+		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
+				<div class="visualClear"></div>
+	</div>
+</div></div>
+<div id="column-one">
+	<div id="p-cactions" class="portlet">
+		<h5>Ansichten</h5>
+		<div class="pBody">
+			<ul>
+				<li id="ca-nstab-main" class="selected"><a href="HowTo_cS_engine.html" title="Seiteninhalt anzeigen [c]" accesskey="c">Seite</a></li>
+				<li id="ca-talk" class="new"><a href="../indexf0e4.html?title=Diskussion:HowTo_cS_engine&amp;action=edit&amp;redlink=1" title="Diskussion zum Seiteninhalt [t]" accesskey="t">Diskussion</a></li>
+				<li id="ca-edit"><a href="../index3769.html?title=HowTo_cS_engine&amp;action=edit" title="Seite bearbeiten. Bitte vor dem Speichern die Vorschaufunktion benutzen. [e]" accesskey="e">Bearbeiten</a></li>
+				<li id="ca-history"><a href="../index0e6f.html?title=HowTo_cS_engine&amp;action=history" title="Frühere Versionen dieser Seite [h]" accesskey="h">Versionen/Autoren</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-personal">
+		<h5>Meine Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+				<li id="pt-anonuserpage"><a href="Benutzer_81.221.215.html" class="new" title="Benutzerseite der IP-Adresse von der aus du Änderungen durchführst [.]" accesskey=".">81.221.215.140</a></li>
+				<li id="pt-anontalk"><a href="Benutzer_Diskussion_81.221.215.html" class="new" title="Diskussion über Änderungen von dieser IP-Adresse [n]" accesskey="n">Diskussionsseite dieser IP</a></li>
+				<li id="pt-anonlogin"><a href="../index0765.html?title=Spezial:Anmelden&amp;returnto=HowTo+cS+engine" title="Sich anzumelden wird zwar gerne gesehen, ist aber keine Pflicht. [o]" accesskey="o">Anmelden</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="portlet" id="p-logo">
+		<a title="Hauptseite" style="background-image: url(../../cSlogo.ico);" href="Hauptseite.html"></a>
+	</div>
+	<script type="text/javascript"> if (window.isMSIE55) fixalpha(); </script>
+	<div class="generated-sidebar portlet" id="p-navigation">
+		<h5>Navigation</h5>
+		<div class='pBody'>
+			<ul>
+				<li id="n-mainpage-description"><a href="Hauptseite.html" title="Hauptseite besuchen [z]" accesskey="z">Hauptseite</a></li>
+				<li id="n-portal"><a href="creatureScan_Gemeinschafts-Portal.html" title="Über das Projekt, was du tun kannst, wo was zu finden ist">Gemeinschafts-Portal</a></li>
+				<li id="n-currentevents"><a href="creatureScan_Aktuelle_Ereignisse.html" title="Hintergrundinformationen zu aktuellen Ereignissen">Aktuelle Ereignisse</a></li>
+				<li id="n-recentchanges"><a href="Spezial_Letzte_%c3%84nderungen.html" title="Liste der letzten Änderungen in creatureScan [r]" accesskey="r">Letzte Änderungen</a></li>
+				<li id="n-randompage"><a href="GaudreauBrazell978.html" title="Zufällige Seite [x]" accesskey="x">Zufällige Seite</a></li>
+				<li id="n-help"><a href="Hilfe_Inhaltsverzeichnis.html" title="Hilfeseite anzeigen">Hilfe</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="p-search" class="portlet">
+		<h5><label for="searchInput">Suche</label></h5>
+		<div id="searchBody" class="pBody">
+			<form action="http://www.creaturescan.creax.de/wiki_2012_casdakfhjwqoefhwifn_2013/index.php5" id="searchform">
+				<input type='hidden' name="title" value="Spezial:Suche"/>
+				<input type="search" name="search" title="creatureScan durchsuchen [f]" accesskey="f" id="searchInput" />
+				<input type="submit" name="go" value="Seite" title="Gehe direkt zu der Seite, die exakt dem eingegebenen Namen entspricht." id="searchGoButton" class="searchButton" />&#160;
+				<input type="submit" name="fulltext" value="Suchen" title="Suche nach Seiten, die diesen Text enthalten" id="mw-searchButton" class="searchButton" />
+			</form>
+		</div>
+	</div>
+	<div class="portlet" id="p-tb">
+		<h5>Werkzeuge</h5>
+		<div class="pBody">
+			<ul>
+				<li id="t-whatlinkshere"><a href="Spezial_Linkliste/HowTo_cS_engine.html" title="Liste aller Seiten, die hierher verlinken [j]" accesskey="j">Links auf diese Seite</a></li>
+				<li id="t-recentchangeslinked"><a href="Spezial_%c3%84nderungen_an_verlinkten_Seiten/HowTo_cS_engine.html" title="Letzte Änderungen an Seiten, die von hier verlinkt sind [k]" accesskey="k">Änderungen an verlinkten Seiten</a></li>
+				<li id="t-specialpages"><a href="Spezial_Spezialseiten.html" title="Liste aller Spezialseiten [q]" accesskey="q">Spezialseiten</a></li>
+				<li><a href="../index04e2.html?title=HowTo_cS_engine&amp;printable=yes" rel="alternate">Druckversion</a></li>
+				<li id="t-permalink"><a href="../index4a18.html?title=HowTo_cS_engine&amp;oldid=296" title="Dauerhafter Link zu dieser Seitenversion">Permanenter Link</a></li>
+			</ul>
+		</div>
+	</div>
+</div><!-- end of the left (by default at least) column -->
+<div class="visualClear"></div>
+<div id="footer">
+	<div id="f-poweredbyico">
+		<a href="http://www.mediawiki.org/"><img src="../skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
+	</div>
+	<ul id="f-list">
+		<li id="lastmod"> Diese Seite wurde zuletzt am 10. Oktober 2011 um 20:03 Uhr geändert.</li>
+		<li id="viewcount">Diese Seite wurde bisher 621-mal abgerufen.</li>
+		<li id="privacy"><a href="creatureScan_Datenschutz.html" title="creatureScan:Datenschutz">Datenschutz</a></li>
+		<li id="about"><a href="creatureScan_%c3%9cber.html" title="creatureScan:Über">Über creatureScan</a></li>
+		<li id="disclaimer"><a href="creatureScan_Impressum.html" title="creatureScan:Impressum">Impressum</a></li>
+	</ul>
+</div>
+</div>
+<script>if(window.mw){
+	mw.loader.load(["mediawiki.user", "mediawiki.util", "mediawiki.page.ready", "mediawiki.legacy.wikibits", "mediawiki.legacy.ajax"]);
+}
+</script>
+<script>if(window.mw){
+	mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":0,"watchlistdays":3,"watchlisthideanons":0,
+	"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"de","language":"de","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;mw.user.tokens.set({"editToken":"+\\","watchToken":false});;mw.loader.state({"user.options":"ready","user.tokens":"ready"});
+	
+	/* cache key: cS_wiki_2012:resourceloader:filter:minify-js:4:87fc609c58a584fa0038ef63f183ceb9 */
+}
+</script><!-- Served in 0.116 secs. --></body>
+<!-- Mirrored from www.creaturescan.creax.de/wiki_2012_casdakfhjwqoefhwifn_2013/index.php5/HowTo_cS_engine by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:30:13 GMT -->
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=173&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:23:12 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: creatureScan 2.0a - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board365c.html?boardid=1&amp;sid=ba443847d600f0c46f829be956d9afeb">Info</a></b> (http://www.creatureScan.creax.de/board.php?boardid=1)<br>
+ <!-- |- <b><a href="board.php?boardid=2Array"></a></b> (/board.php?boardid=2)<br> -->
+ -- <b><a href="board6503.html?boardid=2&amp;sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/board.php?boardid=2)<br>
+ --- <b><a href="thread28a2.html?threadid=173&amp;sid=ba443847d600f0c46f829be956d9afeb">creatureScan 2.0a</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=173)</p>
+ <hr>
+<i>Geschrieben von creature am 12.06.2011 um <font color="#000000">19:33</font>:</i>
+<p> <b>creatureScan 2.0a</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hallo alle zusammen!<br />
+<br />
+Endlich ist es so weit: creatureScan geht über in die Version 2! Wer jetzt großartige Änderungen im Design erwartet, den muss ich leider enttäuschen, denn creatureScan 2.0a ist eher eine Generalüberholung unter der Haube. Es wurden mehrere strukturelle Anpassungen im Programmcode durchgeführt die schon länger dringend nötig waren. Natürlich gibt es auch ein paar neue Features, die auch in den nächsten Versionen noch ausgebaut werden können.<br />
+<br />
+So, nun konkret:<br />
+<br />
+Features:<br />
+- PlayerID + AllyID (keine Probleme mehr mit "Playernam..." in Galaxy-Explorer in Verbindung mit der Stats-Anzeige)<br />
+- Verbesserte Erkennung der Sonnensysteme (nur mit Hilfe des neuen helpers!)<br />
+- Verbesserte Erkennung der Mond?-Scans (Wenn von OGame direkt eingelesen sollte es keine Unklarheiten mehr geben!)<br />
+- Verbesserter PHP-Sync (Bugfixes + Statistiken)<br />
+- ZeitSynchronisation mit dem Server jetzt als Hintergrund-Prozess (Oberfläche hängt direkt nach dem start nichtmehr!)<br />
+- Flottenbenachrichtigungen bleiben nach Ankunft sichtbar und "blinken" bis man sie wegklickt (abschaltbar).<br />
+- Einlesen der Flottenevents an die Änderungen in OGame angepasst.<br />
+<br />
+Intern:<br />
+- Effizentere handhabung der Scanberichte<br />
+- Bugfix: "Speicherleck" in Listenverwaltung (ineffiziente Erweiterung der Liste)<br />
+- Schnellerer HTML-Parser (schnelleres Einlesen möglich)<br />
+- Bugfix: Speicherleck im Soundmodul gefixt!<br />
+<br />
+<img src="images/smilies/smile.gif" alt="smile" border=0><br />
+An dieser Stelle möchte ich noch ein großes DANKESCHÖN an alle Sender ausprechen! Ohne euch wäre diese Version so nicht möglich gewesen!<br />
+<br />
+<a href="http://www.download.creax.de/file.php?id=29" target="_blank">creatureScan 2.0a</a><br />
+<br />
+Da das cShelper-plugin für den Firefox immer mehr Features enthält und somit das Einlesen der Daten in creatureScan erheblich vereinfacht und verbessert, möchte ich hier nochmal darauf aufmerksam machen:<br />
+<br />
+<a href="thread332d.html?postid=682#post682" target="_blank">http://www.creaturescan.creax.de/thread.php?postid=682#post682</a><br />
+<br />
+Zur Installation (wie immer):<br />
+<br />
+- Zip Datei entpacken<br />
+- creatureScan.exe starten<br />
+<br />
+Zum Update (wie immer):<br />
+<br />
+- Backup der alten Daten machen<br />
+- zip-File über die den alten Ordner drüber entpacken<br />
+- fertig!<br />
+<br />
+Viele Grüße<br />
+creature</font></p>
+
+<hr>
+<i>Geschrieben von creature am 13.06.2011 um <font color="#000000">03:10</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">so, und wenige Stunden nach dem Release gibts schon die ersten Probleme:<br />
+<br />
+Nutzer von Windows XP bekommen evtl. eine Fehlermeldung:<br />
+<br />
+<table align="center" width="98%">
+ <tr>
+  <td><font face="Tahoma,Helvetica" size="2"><b>Zitat:</b></font></td>
+ </tr>
+ <tr>
+  <td>
+   <table cellpadding=4 cellspacing=1 width="100%" bgcolor="#000000">
+    <tr>
+     <td bgcolor="#ffffff" id="inposttable"><font face="Tahoma,Helvetica" size="2">Zugriffsverletzung bei Adresse 00E62770. Lesen von Adresse 00E62770.</font></td>
+    </tr>
+   </table>
+  </td>
+ </tr>
+</table><br />
+<br />
+Oder können nur einmal etwas Einlesen und müssen dannach creatureScan neustarten.<br />
+<br />
+In diesem Fall bitte sämtliche Soundausgaben von creatureScan deaktivieren, creatureScan neustarten und anschließend sollte das Einlesen dauerhaft funktionieren.<br />
+<br />
+Dieser Workaround ist unschön, sollte aber reichen solange ich an dem Problem arbeite.</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=173&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:23:12 GMT -->
+</html>

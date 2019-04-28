@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=82&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:37 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: V1.7c - Maximale Anzahl Scans erreicht - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=7Array"></a></b> (/board.php?boardid=7)<br> -->
+ -- <b><a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a></b> (http://www.creatureScan.creax.de/board.php?boardid=7)<br>
+ --- <b><a href="threadba61.html?threadid=82&amp;sid=ba443847d600f0c46f829be956d9afeb">V1.7c - Maximale Anzahl Scans erreicht</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=82)</p>
+ <hr>
+<i>Geschrieben von sador am 14.01.2009 um <font color="#000000">11:37</font>:</i>
+<p> <b>V1.7c - Maximale Anzahl Scans erreicht</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Moin. Ich verwende Creaturescan in u70DE.<br />
+<br />
+Gestern hab ich wohl das maximum an scanberichten erreicht. bei 40.760 Scans sagte mir Creaturescan, dass der maximale Listenindex überschritten sei. Vielleicht könnte man hier mit dynamischem Speicher arbeiten, um die anzahl der spios noch grösser werden zu lassen. Grade bei meinem Datenvolumen :-) ist es recht interessant, weil man eben weiss, wer wann welche fleet wo stehen hat.<br />
+<br />
+2 Dinge hätte ich noch<img src="images/smilies/frown.gif" alt="unglücklich" border=0>Vorschläge)<br />
+1.) CS benutzt wohl die lokale zeit für das Spio alter. Dadurch ergeben sich(weil die unis teils um bis zu 10 minuten unterschiedliche serverzeiten haben) erhebliche diskrepanzen, was wiederum umrechnen bedeutet. Wie wäre es wenn man beim start von CS vom ausgewählten uni die serverzeit holen würde(einfach per http/ request eine seite vom server anfordern, der server wird ohne login mit eniem Fehler antworten, aber im http/ response header steht ja die aktuelle serverzeit), und diese dann für das spioalter verwenden würde? würde grade die sache mit dem 15min abwarten erheblich vereinfachen.<br />
+<br />
+2. Wie wäre es wenn das sternverhalten aus der Gala ansicht mit eingelesen würde? Man könnte den aktuellen stern dann mit dem spio anzeigen lassen(also ob der gescannte zum zeitpunkt des scans einen stern oder min stehen hatte) Ich mache täglich etwa 1k scans, da kann man das ja nicht immer alles im kopf behalten :-)<br />
+<br />
+naja wie gesagt sind 2 Vorschläge...<br />
+<br />
+Eine Frage noch: wer ist im moment der Entwickler von Cs? Ich arbeite gerade an einer erweiterung für Cs und würde mich über eine Kooperation freuen</font></p>
+
+<hr>
+<i>Geschrieben von creature am 17.01.2009 um <font color="#000000">14:06</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi<br />
+<br />
+aha, du hast mich auch per email angeschrieben? richtig?<br />
+<br />
+40.760? was is denn das für ne Zahl!? 65000 nochwas würd ich vllt verstehen... wobei, eigentlich arbeite ich doch mit 32bit....<br />
+das ist alles dynamisch geregelt, ich hab ka wo diese Begrenzung herkommt. Das müsst ich mal selber ausprobieren...<br />
+<br />
+ich finds aber cool das jemand cS in diesem Maße einsetzt, hätt ich nie gedacht :-D<br />
+<br />
+zu 1. Diese idee hatt ich auchschon, ich fands aber bis jetzt nicht wirklich notwendig, da man ja auch einfach die uhrzeit am PC synchen kann. OK, wenn man in mehreren Unis gleichzeitig spielt, hat man durchaus ein Problem ^^<br />
+<br />
+zu2. Ich werde das Demnächst einbauen gleichzeitig mit den Spieler IDs und Stat-PLätzen</font></p>
+
+<hr>
+<i>Geschrieben von creature am 17.01.2009 um <font color="#000000">15:13</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">also, meine tests haben ergeben, das cS sehrwohl mehr scans als 40.760 kann.... mom* mal nachguck...<br />
+<br />
+mit hilfe meines ScanGenerators habs ichs bis jetzt auf 47.177 geschaft und es geht noch weiter :-)<br />
+umsonst war der test aber nicht, da ich nach ca. 10.000 eingelesenen Scans ne fehlermeldung "zu wenig arbeitsspeicher" bekam <img src="images/smilies/frown.gif" alt="unglücklich" border=0> , nachm neustart von cS gings zwar wieder weiter, allerdings darf ich mich jetzt auf die suche nach nem Speicherleck machen...  -.-<br />
+<br />
+<br />
+was mir grad noch einfällt... bist du dir sicher das die meldung in zusammenhang mit scaneinlesen steht? ... es gibt im moment nämlich nen problem mit dem ListenObjekt das die Raids anzeigen soll, hier kann diese Meldung auch auftreten, aber keine Sorge, hat nur mit der anzeige zu tun</font></p>
+
+<hr>
+<i>Geschrieben von sador am 17.01.2009 um <font color="#000000">15:17</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">kk hoffe ich mal. dann importiere ich mal meine scanndatenbank wieder. und ja ich bin derselbe der dich angemailt hat:-) Projekt ist am laufen. mitte nächster woche werd ich dich wohl wieder anmailen mit einer fertigen beta.</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=82&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:37 GMT -->
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=162&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: Fehlermeldung bei versuch mit php server zu syncen. - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=7Array"></a></b> (/board.php?boardid=7)<br> -->
+ -- <b><a href="board3402.html?boardid=7&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlerberichte</a></b> (http://www.creatureScan.creax.de/board.php?boardid=7)<br>
+ --- <b><a href="threadb1e5.html?threadid=162&amp;sid=ba443847d600f0c46f829be956d9afeb">Fehlermeldung bei versuch mit php server zu syncen.</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=162)</p>
+ <hr>
+<i>Geschrieben von Mumie am 05.01.2011 um <font color="#000000">01:55</font>:</i>
+<p><img src="images/icons/icon9.gif" alt="traurig" border=0> <b>Fehlermeldung bei versuch mit php server zu syncen.</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hallo <img src="images/smilies/smile.gif" alt="smile" border=0>,<br />
+<br />
+Ich habe vor kurzem einen php server mit der cs_engine eingerichtet. Soweit funktioniert alles...nur wenn ich dann auf SYNC in creaturescan drücke kommt eine Fehlermeldung:<br />
+"Zugriffsverletzing bei Adresse 0053BB7F in Modul ´creatureScan.exe´. Lesen von Adresse 00000000.<br />
+<br />
+Im Log steht dann:<br />
+<br />
+Start Sync....<br />
+sync solar systems...<br />
+got times, parse...<br />
+do sync...<br />
+<br />
+scheint eher am Programm selber zu liegen oder hab ich was am php server falsch eingestellt???!!!</font></p>
+
+<hr>
+<i>Geschrieben von creature am 05.01.2011 um <font color="#000000">05:24</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hallo, <br />
+<br />
+also, da gibts wohl wirklich einen Fehler im Programm, weil so eine Fehlermeldung sollte auch bei einer falschen server-konfiguration nicht kommen!<br />
+<br />
+Leider kann ich dir nicht genau sagen woran das liegt.<br />
+Kannst du mir, am besten per email, die config.php und einen screenshot von den verbindungs-einstellungen schicken? Dann kann ich dir evtl. helfen.<br />
+<br />
+Und kannst du mir ein paar infos zu den Daten schreiben: <br />
+Wieviele Scans/Solsys in der DB auf dem Server? <br />
+Wieviele Scans/Solsys in der DB auf dem Client (creatureScan)<br />
+<br />
+Gruß creature</font></p>
+
+<hr>
+<i>Geschrieben von Mumie am 06.01.2011 um <font color="#000000">16:59</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">alles klar hab ich gemacht <img src="images/smilies/wink.gif" alt="Augenzwinkern" border=0> ... in der config.php hab ich mal das password rausgemacht <img src="images/smilies/smile.gif" alt="smile" border=0>. hoffe das ist nicht von nöten.</font></p>
+
+<hr>
+<i>Geschrieben von creature am 12.01.2011 um <font color="#000000">23:51</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi Mumie, <br />
+<br />
+hast du meine Mails bekommen?<br />
+<br />
+Gehts mit der neuen Version besser?<br />
+<br />
+Gruß creature</font></p>
+
+<hr>
+<i>Geschrieben von Mumie am 15.01.2011 um <font color="#000000">15:41</font>:</i>
+<p><img src="images/icons/icon16.gif" alt="Daumen hoch!" border=0> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ah sorry... bei dem e-mail postfach schau ich selten rein... leider kommt mit der neuen Version 1.9c der gleiche Fehler. Ich werde jetzt die cs_engine rev 13 mal probieren so wie du es empfohlen hast ... die Version 14-1 die neu hochgeladen wurde hab ich gestestet, leider ohne Erfolg.<br />
+<br />
+danke schonmal für die Mühe <img src="images/smilies/smile.gif" alt="smile" border=0><br />
+<br />
+edit: also mit der rev 13 gehts auch nicht</font></p>
+
+<hr>
+<i>Geschrieben von creature am 26.03.2011 um <font color="#000000">20:06</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hi, versuchs mal mit der neuen Revision 15 <br />
+hab heute den gleichen fehler bekommen, lag daran dass ich mein php geupdatet habe und jetzt andere default-werte verwendet werden.<br />
+<br />
+Gruß</font></p>
+
+<hr>
+<i>Geschrieben von creature am 27.03.2011 um <font color="#000000">00:06</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">hmm... ich hab grad mal testweise die cS_engine auf funpic.de installiert...<br />
+<br />
+scheint so als gäbs da des problem dass das php da ne einstellung hat:<br />
+<br />
+session.use_only_cookies On On<br />
+<br />
+die man nicht ändern kann....<br />
+<br />
+<br />
+da muss ich womöglich doch was mit cookies machen<br />
+<br />
+<br />
+hmpf</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=162&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:24:45 GMT -->
+</html>

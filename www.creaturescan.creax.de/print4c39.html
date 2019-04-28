@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=171&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:37 GMT -->
+<head>
+<title>creatureScan - Druckvorschau: csHelper + PHP-Sync - Seite 1</title>
+</head>
+
+<BODY link="#0000ff" alink="#0000ff" vlink="#0000ff">
+ <font face="Tahoma,Helvetica" size="2"><p><b><a href="indexf8f3.html?sid=ba443847d600f0c46f829be956d9afeb">creatureScan</a></b> (http://www.creatureScan.creax.de/index.php)<br>
+ - <b><a href="board22d3.html?boardid=4&amp;sid=ba443847d600f0c46f829be956d9afeb">User</a></b> (http://www.creatureScan.creax.de/board.php?boardid=4)<br>
+ <!-- |- <b><a href="board.php?boardid=12Array"></a></b> (/board.php?boardid=12)<br> -->
+ -- <b><a href="board00ca.html?boardid=12&amp;sid=ba443847d600f0c46f829be956d9afeb">Hilfe/Fragen</a></b> (http://www.creatureScan.creax.de/board.php?boardid=12)<br>
+ --- <b><a href="threaded29.html?threadid=171&amp;sid=ba443847d600f0c46f829be956d9afeb">csHelper + PHP-Sync</a></b> (http://www.creatureScan.creax.de/threadid.php?threadid=171)</p>
+ <hr>
+<i>Geschrieben von MePha am 07.05.2011 um <font color="#000000">14:55</font>:</i>
+<p> <b>csHelper + PHP-Sync</b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi,<br />
+<br />
+erstmal ein richtig Nettes Tool habt ihr hier, wenn ich auch noch meine "2" kleinen probleme los werden würde ^^<br />
+<br />
+1. das automatische auslesen mit dem csHelper klappt nicht, es werden keinerlei daten automatisch an creatureScan übertragen. alles nur über die zwischenablage möglich.<br />
+einstellungen siehe bild:<br />
+<a href="http://www.imagebanana.com/view/osec9aa7/creatureScan002.jpg" target="_blank"><img src="http://img6.imagebanana.com/img/osec9aa7/thumb/creatureScan002.jpg" border=0></a><br />
+<br />
+2. beim abgleich mit PHP-Sync erhalte ich jedesmal folgende meldung:<br />
+<a href="http://www.imagebanana.com/view/45tof7ug/creatureScan001.jpg" target="_blank"><img src="http://img6.imagebanana.com/img/45tof7ug/thumb/creatureScan001.jpg" border=0></a><br />
+<br />
+könnt ihr mir hierbei irgendwie helfen? <img src="images/smilies/smile.gif" alt="smile" border=0></font></p>
+
+<hr>
+<i>Geschrieben von creature am 08.05.2011 um <font color="#000000">18:09</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">Hi<br />
+<br />
+ja, ich denke ich kann dir helfen:<br />
+<br />
+1. Versuch mal folgendes: Starte creatureScan neu nachdem du den TCP-Port in den Einstellungen aktiviert hast.<br />
+<br />
+2. Lese zu allen vorhandenen Scans auch das zugehörige Sonnensystem ein! (Die Daten müssen nicht aktuell gehalten werden, der Fehler tritt nur auf, wenn kein Sonnesystem eingelesen wurde).<br />
+<br />
+Diese Bugs werden mit der nächsten Version gefixt sein, solange sollten diese Workarounds funktionieren!<br />
+<br />
+Gruß</font></p>
+
+<hr>
+<i>Geschrieben von MePha am 08.05.2011 um <font color="#000000">19:01</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">1. funktioniert das automatische galaxy einlesen seid dem ich die windoof firewall abgeschaltet habe, die spio berichte werden immernoch nicht automatisch erfasst.<br />
+<br />
+2.  ich habe einen bereich von 1:100:xx - 1:270:xx erfasst alle Spio-berichte liegen in diesem bereich, dennoch bleibt diese fehlermeldung<br />
+<br />
+-----<br />
+konnte es aber jetzt soweit eingrenzen das scheinbar beim php sync nicht zuerst die neuen planeten abgerufen werden (oder so) muss mal klären ob in die datenbank auch die planeten eingespielt wurden oder nur die scanns</font></p>
+
+<hr>
+<i>Geschrieben von MePha am 08.05.2011 um <font color="#000000">19:46</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">konnte das problem eingrenzen.<br />
+<br />
+wie du schon richtig gesagt hast haben planeten gefehlt zu spio berichten. konnte es nur über die datenbank selber rausbekommen was für berichte als nächstes kommen und den bereich an sonnensystem einlesen dannach war der fehler beseitigt</font></p>
+
+<hr>
+<i>Geschrieben von creature am 09.05.2011 um <font color="#000000">00:41</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">ok, danke für die Rückmeldung!<br />
+<br />
+Wie sind die Spionageberichte eigentlich in die Datenbank gekommen? Hast du vorher mit einer alten Version von cS gearbeitet?</font></p>
+
+<hr>
+<i>Geschrieben von MePha am 09.05.2011 um <font color="#000000">18:43</font>:</i>
+<p> <b></b></p>
+<p><font face="Tahoma,Helvetica" size="2">von jmd 2tes, der hatte nur spios eingelesen und net die sonnensysteme dazu</font></p>
+
+</font>
+ <p align="center"><font face="Tahoma,Helvetica" size="2">Powered by: <b>Burning Board Lite 1.0.2</b> © 2001-2004 <b><a href="http://www.woltlab.de/" target="_blank">WoltLab GmbH</a></b></font></p>
+</body>
+
+<!-- Mirrored from www.creaturescan.creax.de/print.php?threadid=171&page=1&sid=ba443847d600f0c46f829be956d9afeb by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 28 Apr 2019 13:28:37 GMT -->
+</html>
